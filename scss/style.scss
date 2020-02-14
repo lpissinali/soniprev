@@ -1,0 +1,13 @@
+// libraries
+@import "../assets/bootstrap/dist/css/bootstrap.css";
+@import "slick.scss";
+
+// common
+@import "variables";
+@import "base";
+@import "header";
+@import "footer";
+
+// pages
+@import "pages/home";
+@import "pages/login";
