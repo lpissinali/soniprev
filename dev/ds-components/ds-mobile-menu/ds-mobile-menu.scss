@@ -1,0 +1,40 @@
+// главное меню
+.main-menu {
+  position: fixed;
+  top: 3.45rem;
+  left: -105vw;
+  z-index: 200;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  overflow: hidden;
+  overflow-y: scroll;
+  transition: transform 200ms;
+}
+
+// главное меню активно
+.main-menu.active {
+  transform: translateX(105vw);
+}
+
+// список пунктов меню
+.main-menu__list {
+  display: block;
+  padding-top: 3.5rem;
+  padding-bottom: 10rem;
+  padding-left: 2.5rem;
+  height: auto;
+}
+
+// ссылки меню
+.main-menu__link {
+  font-size: 2.125rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+// блокировка скролла
+.main-menu__overflow-hidden {
+  overflow: hidden;
+}

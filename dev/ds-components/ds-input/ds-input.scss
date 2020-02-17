@@ -1,0 +1,49 @@
+/* -- DS-INPUT СТИЛИЗОВАННЫЙ ВВОД v.2.0.1 */
+
+// главный контейнер
+.ds-input {
+  width: 100%;
+}
+
+// label надпись над полем
+.ds-input__label {
+  display: block;
+  padding-bottom: .5rem;
+  font-size: 1rem;
+  color: #848484;
+}
+
+// обертка для позиционирования чего-либо над input
+.ds-input__wrapper {
+  position: relative;
+}
+
+// поле ввода текста
+.ds-input__field {
+  @include placeholder {
+    color: #848484;
+    opacity: 1;
+  }
+
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  width: 100%;
+  min-height: 3.25rem;
+  border: .15rem solid #848484;
+  border-radius: .3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #848484;
+}
+
+// меняем цвет рамки поля на красный если есть класс .error
+.ds-input.error .ds-input__field {
+  border: .15rem solid red;
+}
+
+// отображаем helper-text если есть класс .error
+.ds-input.error .helper-text {
+  display: block;
+}

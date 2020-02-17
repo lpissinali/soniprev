@@ -1,0 +1,24 @@
+mixin lazyPicture(param)
+    picture
+        if param.jpeg
+            if param.mob
+                source(data-srcset="./images/" + param.img + "-mob.webp" media="(max-width: " + param.mob + "px)" type="image/webp")
+                source(data-srcset="./images/" + param.img + "-mob.jpeg" media="(max-width: " + param.mob + "px)" type="image/jpeg")
+            if param.tab
+                source(data-srcset="./images/" + param.img + "-tab.webp" media="(max-width: " + param.tab + "px)" type="image/webp")
+                source(data-srcset="./images/" + param.img + "-tab.jpeg" media="(max-width: " + param.tab + "px)" type="image/jpeg")
+            source(data-srcset="./images/" + param.img + ".webp" type="image/webp")
+            source(data-srcset="./images/" + param.img + ".jpeg" type="image/jpeg")
+            img.b-lazy(data-src="./images/" + param.img + ".jpeg" src="./images/" + param.def + "", alt="")
+        
+        if param.png
+            if param.mob
+                source(data-srcset="./images/" + param.img + "-mob.webp" media="(max-width: " + param.mob + "px)" type="image/webp")
+                source(data-srcset="./images/" + param.img + "-mob.png" media="(max-width: " + param.mob + "px)" type="image/png")
+            if param.tab
+                source(data-srcset="./images/" + param.img + "-tab.webp" media="(max-width: " + param.tab + "px)" type="image/webp")
+                source(data-srcset="./images/" + param.img + "-tab.png" media="(max-width: " + param.tab + "px)" type="image/png")
+            source(data-srcset="./images/" + param.img + ".webp" type="image/webp")
+            source(data-srcset="./images/" + param.img + ".png" type="image/png")
+            img.b-lazy(data-src="./images/" + param.img + ".png" src="./images/" + param.def + "", alt="")
+

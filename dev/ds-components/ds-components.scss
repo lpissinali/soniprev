@@ -1,0 +1,32 @@
+/*
+бибоиотека компонентов
+автор shkredovdmitriy@gmail.com
+2018 - 2020
+*/
+
+// миксины
+@import "./helpers-scss/mixins.scss";
+
+// хелперы
+// @import "./helpers-scss/text-overflow-elipsis.scss"; // обрезка текста + ...
+
+// компоненты
+// @import "./ds-modal/ds-modal.scss"; // модальное окно
+
+@import "./ds-radiobtn/ds-radiobtn.scss"; // стилизованная радио кнопка
+
+@import "./ds-checkbox/ds-checkbox.scss"; // стилизованный чекбокс
+
+@import "./ds-input/ds-input.scss"; // стилизованный input
+
+@import "./ds-input-file/ds-input-file.scss"; // поля ввода файла
+
+@import "./ds-input-pass/ds-input-pass.scss"; // поля ввода пароля
+
+@import "./ds-select/ds-select.scss"; // стилизованный html select
+
+@import "./ds-textarea/ds-textarea.scss"; // адаптивный блок для ввода текста
+
+// @import "./ds-accordion/ds-accordion.scss"; // аккордион для faq
+
+@import "./ds-mobile-menu/ds-mobile-menu.scss"; // мобильное меню

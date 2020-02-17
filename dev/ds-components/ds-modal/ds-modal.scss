@@ -1,0 +1,93 @@
+/* ds-modal */
+
+/* запрещаем прокрутку для body */
+.ds-modal__overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* фиксированная оболочка со скрытым скроллом и фоновой заливкой */
+.ds-modal {
+  position: fixed;
+  top: 0;
+  right: -30px;
+  bottom: 0;
+  left: 0;
+  z-index: 1003;
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  will-change: opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+/* обертка с выравниванием модального окна по горизонтали и верикали */
+.ds-modal__wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1.5rem;
+  width: 100vw;
+  min-height: 100%;
+}
+
+/* фикс бага (min-height) в ИЕ11 */
+_:-ms-fullscreen,
+:root .ds-modal__wrapper {
+  height: 1px;
+}
+
+/* само модальное окно */
+.ds-modal__body {
+  position: relative;
+  padding: 4.5rem 1.7rem 3.8rem;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: .4rem;
+  background-color: #ffffff;
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+/* расположение кнопки закрытия (крестика) */
+.ds-modal-close-btn {
+  top: 1.1rem;
+  right: 1.25rem;
+}
+
+/* внутреннее содержимое модального окна */
+.ds-modal__headline {
+  margin-bottom: 1.9rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.ds-modal__text {
+  font-size: 1.5rem;
+}
+
+/* анимация модального окна: fade in scale */
+.fade-in-scale-block {
+  display: block;
+  background-color: rgba(0, 0, 0, .8);
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 200ms ease-in-out;
+}
+
+.fade-in-scale-block .ds-modal__body {
+  opacity: 0;
+  will-change: transform, opacity;
+  transform: scale(.7);
+  transition: transform 300ms, opacity 300ms;
+}
+
+.fade-in-scale-bg {
+  opacity: 1;
+}
+
+.fade-in-scale-body .ds-modal__body {
+  opacity: 1;
+  transform: scale(1);
+}

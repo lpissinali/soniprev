@@ -1,0 +1,85 @@
+///////////////////////////////////////
+// стилизованный радиобаттон
+// автор shkredovdmitriy@gmail.com
+//////////////////////////////////////
+
+.ds-radiobtn {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+// прячем html радио баттон
+.ds-radiobtn__html-radiobtn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+// текст с описанием
+.ds-radiobtn__label {
+  position: relative;
+  display: block;
+  padding-left: 2rem;
+  color: #252525;
+}
+
+// стилизованная точка
+.ds-radiobtn__html-radiobtn ~ .ds-radiobtn__span {
+  position: absolute;
+  top: -.125rem;
+  left: 0;
+  width: 1.375rem;
+  height: 1.375rem;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./ds-radiobtn__unchecked-img.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    background-image: url("./ds-radiobtn__checked-img.svg");
+    opacity: 0;
+  }
+}
+
+// активная точка
+.ds-radiobtn__html-radiobtn:checked ~ .ds-radiobtn__span {
+
+  &::before {
+    opacity: 0;
+  }
+
+  &::after {
+    opacity: 1;
+  }
+}
+
+// ошибка
+.error .ds-radiobtn__html-radiobtn ~ .ds-radiobtn__span {
+
+  &::before {
+    background-image: url("./ds-radiobtn__error-img.svg");
+  }
+}
+
+.error .ds-radiobtn__html-radiobtn:checked ~ .ds-radiobtn__span {
+
+  &::before {
+    opacity: 0;
+  }
+}
+
+// меняем цвет текста на красный если есть класс .error
+.error .ds-radiobtn__label {
+  color: red;
+}

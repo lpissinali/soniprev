@@ -1,0 +1,30 @@
+@import "fonts.scss";
+
+@import "mixins.scss";
+
+@import "./bootstrap/bootstrap.scss";
+
+@import "vars.scss";
+
+@import "layout.scss";
+
+// элементы
+@import "../../elements/white-button.scss";
+
+// компоненты
+@import "../../ds-components/ds-components.scss";
+
+// слайдер
+@import "./slick.scss";
+
+// шапка
+@import "../../blocks/main-header/main-header.scss";
+
+// главная страница - секция 1
+@import "../../blocks/main-slider/main-slider.scss";
+
+// футер
+@import "../../blocks/main-footer/main-footer";
+
+//registration page
+@import "../../blocks/registration/registration.scss";

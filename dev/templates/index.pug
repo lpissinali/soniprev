@@ -1,0 +1,32 @@
+include ../common/pug/mixins
+
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width")
+        meta(name="keywords" content=meta1)
+        meta(name="description" content=meta2)
+        link(rel="icon" type="image/x-icon" href="./images/favicon.ico")
+    body(class=pageClass)
+      include ../blocks/main-header/main-header
+      .main-content
+        block content
+      include ../blocks/main-footer/main-footer
+      
+      script(src="js/jquery-3.3.1.min.js")
+      script(src="js/popper.min.js")
+      script(src="js/bootstrap.min.js")
+      script(src="js/slick.min.js")
+      //- script(src="js/jquery.mousewheel.min.js")
+      //- script(src="js/datatables.min.js")
+      //- script(src="js/jquery.validate.min.js")
+      //- script(src="js/messages_ru.min.js")
+      //- script(src="js/jquery.inputmask.min.js")
+      //- script(src="js/tooltipster.bundle.min.js")

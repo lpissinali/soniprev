@@ -1,0 +1,25 @@
+header.main-header
+    .main-header__wrapper
+        a(href="#").main-header__logo-link
+            picture
+                source(srcset="./images/main-header-logo-mob.png" media="(max-width: 800px)")
+                img(src="./images/main-header-logo.png", alt="").main-header__logo-image
+        nav.main-header__navigation
+            ul.main-header__nav-list
+                li.main-header__nav-item.none
+                    a(href="#").main-header__nav-link.mob-menu-close-btn Home
+                li.main-header__nav-item
+                    a(href="#").main-header__nav-link.mob-menu-close-btn Publicacoes
+                li.main-header__nav-item
+                    a(href="#").main-header__nav-link.mob-menu-close-btn Sobre nos
+                li.main-header__nav-item
+                    a(href="#").main-header__nav-link.mob-menu-close-btn Projetos
+                li.main-header__nav-item
+                    a(href="#").main-header__nav-link.mob-menu-close-btn Processe Seletivo
+                li.main-header__nav-item
+                    a(href="#").main-header__nav-link.mob-menu-close-btn Fale conosco
+                li.main-header__nav-item
+                    a(href="#").main-header__nav-link.main-header__nav-button.mob-menu-close-btn Login
+            .main-header__navigation-close-button.mob-menu-close-btn
+        .main-header__mobile-menu-container
+            .main-header__mobile-menu-button

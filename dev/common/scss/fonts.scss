@@ -1,0 +1,7 @@
+@import "mixins";
+
+@include font-face("latoRegular", "../../fonts/LatoLatin-Regular", 400);
+
+@include font-face("latoBold", "../../fonts/LatoLatin-Bold", 400);
+
+@include font-face("latoBlack", "../../fonts/LatoLatin-Black", 400);
