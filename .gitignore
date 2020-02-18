@@ -3,4 +3,5 @@ node_modules/
 .idea/
 build/
 maket/
+package-lock.json
 

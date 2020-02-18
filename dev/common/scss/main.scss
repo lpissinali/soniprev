@@ -2,9 +2,9 @@
 
 @import "mixins.scss";
 
-@import "./bootstrap/bootstrap.scss";
-
 @import "vars.scss";
+
+@import "./bootstrap/bootstrap.scss";
 
 @import "layout.scss";
 
@@ -52,8 +52,14 @@
 // information section
 @import "../../blocks/information/information.scss";
 
+// main-page - feedback
+@import "../../blocks/feedback/feedback.scss";
+
+// main-page - map
+@import "../../blocks/main-map/main-map.scss";
+
 // футер
 @import "../../blocks/main-footer/main-footer";
 
-//registration page
+// registration page
 @import "../../blocks/registration/registration.scss";
