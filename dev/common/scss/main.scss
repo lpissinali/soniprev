@@ -8,45 +8,45 @@
 
 @import "layout.scss";
 
-// элементы
+// elements
 @import "../../elements/button.scss";
 
 @import "../../elements/section-headline.scss";
 
-// компоненты
+// components
 @import "../../ds-components/ds-components.scss";
 
-// слайдер
+// slider
 @import "./slick.scss";
 
 // modal-areas
 @import "../../blocks/modal-areas/modal-areas.scss";
 
-// шапка
+// header
 @import "../../blocks/main-header/main-header.scss";
 
-// главная страница - секция 1
+// main page - swction 1
 @import "../../blocks/main-slider/main-slider.scss";
 
-// главная страница - секция 2
+// main page - swction 2
 @import "../../blocks/publicacoes/publicacoes.scss";
 
-// главная страница - секция 3
+// main page - swction 3
 @import "../../blocks/empresa/empresa.scss";
 
-// главная страница - секция 4
+// main page - swction 4
 @import "../../blocks/card-section/card-section.scss";
 
-// главная страница - секция 5
+// main page - swction 5
 @import "../../blocks/presidencia/presidencia.scss";
 
-// главная страница - секция 6
+// main page - swction 6
 @import "../../blocks/servicos/servicos.scss";
 
-// главная страница - секция 7
+// main page - swction 7
 @import "../../blocks/areas/areas.scss";
 
-// главная страница - секция 8
+// main page - swction 8
 @import "../../blocks/projetos/projetos.scss";
 
 // information section
@@ -58,8 +58,11 @@
 // main-page - map
 @import "../../blocks/main-map/main-map.scss";
 
-// футер
+// footer
 @import "../../blocks/main-footer/main-footer";
 
 // registration page
 @import "../../blocks/registration/registration.scss";
+
+// login page
+@import "../../blocks/login1/login1.scss";

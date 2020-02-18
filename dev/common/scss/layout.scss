@@ -41,13 +41,12 @@ a {
   text-decoration: none;
 }
 
-
 //layout styles
 .tipo-t2 {
   font-family: $main-font-black;
   font-size: 2.5rem;
-  color: $blue;
   text-align: center;
+  color: $blue;
 }
 
 .tipo-t3 {
@@ -65,14 +64,13 @@ a {
 .tipo-reg {
   font-family: $main-font-regular;
   font-size: 1.125rem;
-  color: $grey;  
+  color: $grey;
 }
 
-.small-button{
+.small-button {
   min-width: 11.25rem;
 }
 
-// подгонка
 @media screen and ($nout1), ($nout2), ($nout3) {
 
   html,
@@ -81,7 +79,7 @@ a {
   }
 }
 
-// мобайл
+// mobile
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
 
   html,
@@ -94,92 +92,16 @@ a {
     font-size: 1.125rem;
   }
 
-  .tipo-t3, label {
-    font-size: 0.875rem;
+  .tipo-t3,
+  label {
+    font-size: .875rem;
   }
 
   .tipo-c1 {
-    font-size: 0.8438rem;
+    font-size: .8438rem;
   }
 
   .tipo-reg {
-    font-size: 0.8438rem;
+    font-size: .8438rem;
   }
-
 }
-
-// // подгоняем квадратную верстку под широкий формат
-// @media screen and ($wideScreen) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 1310 * 16);
-//   }
-// }
-
-// // подгоняем квадратную верстку под широкий формат
-// @media screen and ($wideScreen2) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 1420 * 16);
-//   }
-// }
-
-// // подгоняем квадратную верстку под очень широкий формат
-// @media screen and ($wideScreen3) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 1530 * 16);
-//   }
-// }
-
-// // подгоняем квадратную верстку под очень очень широкий формат
-// @media screen and ($wideScreen4) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 1580 * 16);
-//   }
-// }
-
-// @media screen and ($tablet1), ($tablet2) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 1024 * 16);
-//   }
-// }
-
-// @media screen and ($mobile1), ($mobile2) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 360 * 16);
-//   }
-// }
-
-// @media screen and ($wideScreen) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 1700 * 16);
-//   }
-// }
-
-// @media screen and ($wideScreen2) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 1800 * 16);
-//   }
-// }
-
-// @media screen and ($mobile1), ($mobile2) {
-
-//   html,
-//   body {
-//     font-size: calc(100vw / 375 * 16);
-//   }
-// }

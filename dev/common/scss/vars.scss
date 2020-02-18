@@ -1,39 +1,24 @@
-// цвета
+// colors
 $white: #ffffff;
 $black: #000000;
 $blue: #0c4da2;
 $grey: #6e6e6e;
 $light-grey: #0000001a;
-$medium-grey: #BFBFBF;
+$medium-grey: #bfbfbf;
 $grey: #6e6e6e;
 
-//шрифты
+// fonts
 $main-font-regular: "latoRegular", arial, sans-serif;
 $main-font-bold: "latoBold", arial, sans-serif;
 $main-font-light: "latoLight", arial, sans-serif;
 $main-font-black: "latoBlack", arial, sans-serif;
-// $secondary-font-light: gillsanslight, Arial, sans-serif;
-// $secondary-font-normal: gillsansnormal, Arial, sans-serif;
-// $secondary-font-bold: gillsansbold, Arial, sans-serif;
 
-// медиазапросы ширина менее 1460px
+// less then 1460px
 $nout1: "max-width: 1460px";
 $nout2: "max-width: 1460px";
 $nout3: "max-width: 1460px";
 
-// медиазапросы мобайл
+// mobile
 $mobile1: "max-width: 800px";
 $mobile2: "max-width: 800px";
 $mobile3: "max-width: 800px";
-
-// МЕДИА ЗАПРОСЫ ШИРОКОФОРМАТ
-// $wideScreen: "min-aspect-ratio: 32/21";
-
-// МЕДИА ЗАПРОСЫ ШИРОКОФОРМАТ
-// $wideScreen2: "min-aspect-ratio: 32/20";
-
-// МЕДИА ЗАПРОСЫ ОЧЕНЬ ШИРОКОФОРМАТ
-// $wideScreen3: "min-aspect-ratio: 32/19";
-
-// МЕДИА ЗАПРОСЫ ОЧЕНЬ ОЧЕНЬ ШИРОКОФОРМАТ
-// $wideScreen4: "min-aspect-ratio: 32/17";

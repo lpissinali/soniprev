@@ -1,42 +1,44 @@
-.main-map__map-container{
+.main-map__map-container {
   position: relative;
   width: 100%;
   min-height: 62rem;
 }
 
-.main-map__google-map{
+.main-map__google-map {
   position: absolute;
-  z-index: 1;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.main-map__title{
+.main-map__title {
   position: absolute;
-  z-index: 2;
-  top: -0.125rem;
+  top: -.125rem;
   left: 0;
+  z-index: 2;
   width: 100%;
   min-height: 11.125rem;
-  background-color: $white;
-  border-bottom-left-radius: 3.25rem;
   border-bottom-right-radius: 3.25rem;
+  border-bottom-left-radius: 3.25rem;
   box-shadow: 0rem 3.125rem 3.3125rem $light-grey;
-  text-align: center;
+  background-color: $white;
   line-height: 11.125rem;
+  text-align: center;
   color: $blue;
 }
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
-  .main-map__map-container{
+
+  .main-map__map-container {
     min-height: 28.125rem;
   }
-  .main-map__title{
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem;
+
+  .main-map__title {
     min-height: 6rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
     line-height: 6rem;
   }
 }

@@ -1,4 +1,3 @@
-// шапка
 .main-header {
   position: fixed;
   top: 0;
@@ -15,7 +14,6 @@
   background-color: transparent;
 }
 
-// обертка
 .main-header__wrapper {
   justify-content: space-between;
   align-items: start;
@@ -26,39 +24,32 @@
   width: 89.75rem;
 }
 
-// ссылка с лого
 .main-header__logo-link {
   display: block;
   width: 16rem;
 }
 
-// лого
 .main-header__logo-image {
   width: 100%;
 }
 
-// панель навигации
 .main-header__navigation {
   width: 59.625rem;
 }
 
-// список ссылок
 .main-header__nav-list {
   justify-content: space-between;
   display: flex;
   width: 100%;
 }
 
-// элемент для ссылки
 .main-header__nav-item {
 }
 
-// ссылка скрыта для десктопа
 .main-header__nav-item.none {
   display: none;
 }
 
-// ссылка
 .main-header__nav-link {
   justify-content: center;
   align-items: center;
@@ -73,14 +64,12 @@
   color: $white;
 }
 
-// кнопка
 .main-header__nav-button {
   width: 5.625rem;
   border: .125rem solid white;
   border-radius: .5rem;
 }
 
-// мобильная кнопка закрыть меню
 .main-header__navigation-close-button {
   position: absolute;
   top: 1rem;
@@ -95,33 +84,28 @@
   cursor: pointer;
 }
 
-// моб меню контейнер
 .main-header__mobile-menu-container {
   display: none;
 }
 
-// мобайл
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
-  // шапка
+
   .main-header {
     position: static;
     height: 7.625rem;
     background-color: white;
   }
 
-  // обертка
   .main-header__wrapper {
     padding-top: 2.9375rem;
     padding-left: 1.75rem;
     width: 100%;
   }
 
-  // ссылка с лого
   .main-header__logo-link {
     width: 11.3125rem;
   }
 
-  // панель навигации
   .main-header__navigation {
     position: fixed;
     top: 2.625rem;
@@ -138,12 +122,10 @@
     transition: transform 300ms;
   }
 
-  // панель навигации активна
   .main-header__navigation.active {
     transform: translateX(-22.8125rem);
   }
 
-  // моб меню контейнер
   .main-header__mobile-menu-container {
     position: fixed;
     top: 2.75rem;
@@ -161,25 +143,21 @@
     cursor: pointer;
   }
 
-  // список ссылок
   .main-header__nav-list {
     display: block;
     margin-left: auto;
     width: 11.125rem;
   }
 
-  // элемент для ссылки
   .main-header__nav-item {
     padding-top: .625rem;
     width: 11.125rem;
   }
 
-  // ссылка скрыта для десктопа
   .main-header__nav-item.none {
     display: block;
   }
 
-  // ссылка
   .main-header__nav-link {
     justify-content: flex-end;
     align-items: center;
@@ -194,7 +172,6 @@
     color: $blue;
   }
 
-  // кнопка
   .main-header__nav-button {
     justify-content: center;
     margin-left: auto;
@@ -203,12 +180,10 @@
     border-radius: .5rem;
   }
 
-  // мобильная кнопка закрыть меню
   .main-header__navigation-close-button {
     display: block;
   }
 
-  // сендвич
   .main-header__mobile-menu-button {
     position: relative;
     display: block;
