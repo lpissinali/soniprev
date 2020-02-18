@@ -50,3 +50,15 @@ if (document.querySelector('.presidencia__card')) {
 if (document.querySelector(".main-map__map-container") !== null) {
   initMap();
 }
+
+/**
+ * feedback form test validation
+ */
+const feedbackForm = document.querySelector('#feedback');
+feedbackForm.addEventListener('submit', function(event) {
+  if (feedbackForm.checkValidity() === false) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  feedbackForm.classList.add('was-validated');
+}, false);

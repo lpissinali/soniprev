@@ -1,2 +1,21 @@
 @import "custom-bootstrap.scss";
 @import "~bootstrap/scss/bootstrap";
+
+.form-group {
+  margin-bottom: 2.1875rem;
+}
+
+.form-group > label {
+  margin-bottom: 0.9375rem;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid,
+.was-validated .form-control:valid, .form-control.is-valid {
+  padding-right: 0.75rem;
+  background-image: none;
+}
+
+.form-group > textarea {
+  min-height: 10.4375rem;
+}
+
