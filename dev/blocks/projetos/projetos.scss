@@ -54,6 +54,8 @@
 }
 
 .projetos__map-section {
+  justify-content: space-between;
+  display: flex;
   margin-top: 3.125rem;
 }
 
@@ -106,4 +108,118 @@
 .projetos__text-descr {
   font-size: 1.125rem;
   color: $grey;
+}
+
+.projetos__map-container {
+  width: 38.875rem;
+  height: 39.1875rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .projetos {
+    padding-top: 6.25rem;
+    padding-bottom: 4.6875rem;
+  }
+
+  .projetos__wrapper {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    width: 100%;
+  }
+
+  .projetos__description {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: .8438rem;
+    line-height: 1.62;
+  }
+
+  .projetos__legend {
+    display: block;
+    margin-top: 1.625rem;
+    margin-left: 4.1875rem;
+    width: 13.75rem;
+  }
+
+  .projetos__legend-name {
+    justify-content: flex-start;
+    margin: 0;
+    margin-bottom: .3125rem;
+
+    img {
+      float: left;
+      margin-right: .5rem;
+      width: 2.5rem;
+      height: auto;
+    }
+
+    span {
+      font-family: "latoBold";
+      font-size: .8438rem;
+    }
+  }
+
+  .projetos__map-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 3.125rem;
+  }
+
+  .projetos__text-container.blue,
+  .projetos__text-container.grey {
+    padding-top: 3.4375rem;
+    width: 100%;
+  }
+
+  .projetos__text-headline {
+    margin-bottom: 1.625rem;
+    font-size: 1.125rem;
+  }
+
+  .projetos__text-wrapper {
+    display: block;
+  }
+
+  .projetos__text-line-50 {
+    width: 100%;
+  }
+
+  .projetos__text-line-100 {
+    width: 100%;
+  }
+
+  .projetos__text-block {
+    padding-bottom: 1.5625rem;
+    min-height: 0;
+  }
+
+  .projetos__text-number {
+    margin-bottom: .25rem;
+    font-size: 1.5625rem;
+  }
+
+  .projetos__text-name {
+    margin-bottom: .5rem;
+    font-size: 1rem;
+  }
+
+  .projetos__text-descr {
+    font-size: .8438rem;
+  }
+
+  .projetos__map-container {
+    width: 19.6875rem;
+    height: 19.9375rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
