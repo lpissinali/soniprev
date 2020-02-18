@@ -1,0 +1,126 @@
+.card-section {
+  padding-top: 14.75rem;
+  padding-bottom: 6.875rem;
+  background-image: url("./images/card-section-bg-dsk.svg");
+  background-position: 54% bottom;
+  background-repeat: no-repeat;
+  background-size: 55.5625rem auto;
+}
+
+.card-section__wrapper {
+  justify-content: space-between;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 79.75rem;
+}
+
+.card-section__card {
+  padding-top: 3.5rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  width: 22.5rem;
+  height: 23.75rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, .1);
+  background-color: $white;
+  text-align: center;
+}
+
+.card-section__img-container {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  height: 3.625rem;
+
+  .image-1 {
+    width: auto;
+    height: 3.625rem;
+  }
+
+  .image-1 {
+    width: auto;
+    height: 2.1875rem;
+  }
+
+  .image-1 {
+    width: auto;
+    height: 3.0625rem;
+  }
+}
+
+.card-section__card-headline {
+  margin-top: .9375rem;
+  font-family: "latoBold";
+  font-size: 1.375rem;
+  color: $blue;
+}
+
+.card-section__card-text,
+.card-section__card-list {
+  margin-top: .75rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: $grey;
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .card-section {
+    padding-top: 3.75rem;
+    padding-bottom: 1rem;
+    background-position: 55% 54%;
+    background-repeat: no-repeat;
+    background-size: auto 31.4375rem;
+  }
+
+  .card-section__wrapper {
+    display: block;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    width: 100%;
+  }
+
+  .card-section__card {
+    margin-bottom: 3.125rem;
+    padding-top: 1.875rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    width: 100%;
+    height: 15.75rem;
+  }
+
+  .card-section__img-container {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    height: 3.625rem;
+
+    .image-1 {
+      width: auto;
+      height: 3.625rem;
+    }
+
+    .image-1 {
+      width: auto;
+      height: 2.1875rem;
+    }
+
+    .image-1 {
+      width: auto;
+      height: 3.0625rem;
+    }
+  }
+
+  .card-section__card-headline {
+    margin-top: .9375rem;
+    font-size: 1.125rem;
+  }
+
+  .card-section__card-text,
+  .card-section__card-list {
+    margin-top: .5rem;
+    font-size: .8438rem;
+    line-height: 1.62;
+  }
+}

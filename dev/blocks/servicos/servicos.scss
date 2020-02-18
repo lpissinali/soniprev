@@ -1,0 +1,96 @@
+.servicos {
+  padding-top: 18.5rem;
+  padding-bottom: 6.5625rem;
+  background-image: url("./images/servicos-bg-dsk.svg");
+  background-position: calc(50% - 31.5rem) bottom;
+  background-repeat: no-repeat;
+  background-size: auto 50.625rem;
+}
+
+.servicos__wrapper {
+  justify-content: space-between;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 88.75rem;
+}
+
+.servicos__img-container {
+  width: 41.25rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+}
+
+.servicos__text-container {
+  padding-top: 5.5rem;
+  width: 35.75rem;
+}
+
+.servicos__text-headline {
+  margin-bottom: 1.875rem;
+}
+
+.servicos__list {
+  font-size: 1.125rem;
+  line-height: 1.77;
+  color: $grey;
+
+  li {
+    margin-bottom: .75rem;
+  }
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .servicos {
+    padding-top: 7rem;
+    padding-bottom: 6.5625rem;
+    background-position: -4.25rem 11rem;
+    background-repeat: no-repeat;
+    background-size: 32.5rem auto;
+  }
+
+  .servicos__wrapper {
+    position: relative;
+    display: block;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    width: 100%;
+  }
+
+  .servicos__img-container {
+    position: absolute;
+    top: 2.75rem;
+    left: 1.875rem;
+    width: 19.6875rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 2rem;
+    }
+  }
+
+  .servicos__text-container {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .servicos__text-headline {
+    margin-bottom: 19rem;
+  }
+
+  .servicos__list {
+    font-size: .8438rem;
+    line-height: 1.62;
+    color: $grey;
+
+    li {
+      margin-bottom: .375rem;
+    }
+  }
+}

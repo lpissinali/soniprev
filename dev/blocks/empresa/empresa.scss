@@ -1,0 +1,87 @@
+.empresa {
+  padding-top: 10.625rem;
+}
+
+.empresa__wrapper {
+  justify-content: space-between;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 88.375rem;
+  height: 33.5rem;
+}
+
+.empresa__text-container {
+  width: 32.125rem;
+}
+
+.empresa__text-headline {
+  margin-bottom: 1.875rem;
+
+  span {
+    font-family: "latoRegular";
+    color: $grey;
+  }
+}
+
+.empresa__text-description {
+  margin-bottom: 1.875rem;
+  font-size: 1.125rem;
+  line-height: 1.77;
+  color: $grey;
+}
+
+.empresa__img-container {
+  width: 41.1875rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .empresa {
+    padding-top: 5rem;
+  }
+
+  .empresa__wrapper {
+    position: relative;
+    display: block;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .empresa__text-container {
+    width: 100%;
+  }
+
+  .empresa__text-headline {
+    margin-bottom: 1rem;
+  }
+
+  .empresa__text-description {
+    margin-bottom: 1.875rem;
+    font-size: .8438rem;
+    line-height: 1.62;
+  }
+
+  .empresa__text-description.margin-top {
+    margin-top: 18.5rem;
+  }
+
+  .empresa__img-container {
+    position: absolute;
+    top: 14.75rem;
+    left: 1.875rem;
+    width: 19.625rem;
+
+    img {
+      border-radius: 1.25rem;
+    }
+  }
+}
