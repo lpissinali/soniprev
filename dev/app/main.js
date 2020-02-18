@@ -2,6 +2,7 @@
 import '../common/scss/main.scss';
 
 import { dsMobileMenu } from '../ds-components/ds-components';
+import initMap from "./modules/googleMaps";
 
 // подключаем полифиллы
 require('./polyfills/polyfills');
@@ -41,4 +42,11 @@ if (document.querySelector('.presidencia__card')) {
       $(element).toggleClass('visible');
     });
   });
+}
+
+/**
+ * map init
+ */
+if (document.querySelector(".main-map__map-container") !== null) {
+  initMap();
 }
