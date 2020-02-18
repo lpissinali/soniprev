@@ -1,10 +1,27 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 800px,
+  xl: 1200px
+) !default;
+
 $blue:   #0c4da2;
 $gray-600: #0000001a;
 $body-color: #6e6e6e;
 
 $border-width: 0.1875rem;
+
 $border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
 
 $input-btn-font-family: "latoRegular", arial, sans-serif;
-$input-btn-font-size: 1.125rem;
 
+$input-btn-font-size-lg: 1.125rem;
+$input-btn-font-size: 0.8438rem;
+
+$input-btn-padding-x-lg: 2.375rem;
+$input-btn-padding-x: 1.5625rem;
+
+$input-btn-padding-x-lg: 1.25rem;
+$input-btn-padding-x: 1rem;

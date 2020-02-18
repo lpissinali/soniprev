@@ -16,7 +16,7 @@
 .main-map__title{
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: -0.125rem;
   left: 0;
   width: 100%;
   min-height: 11.125rem;
@@ -25,8 +25,18 @@
   border-bottom-right-radius: 3.25rem;
   box-shadow: 0rem 3.125rem 3.3125rem $light-grey;
   text-align: center;
-  font-family: $main-font-black;
-  font-size: 2.5rem;
   line-height: 11.125rem;
   color: $blue;
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+  .main-map__map-container{
+    min-height: 28.125rem;
+  }
+  .main-map__title{
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    min-height: 6rem;
+    line-height: 6rem;
+  }
 }
