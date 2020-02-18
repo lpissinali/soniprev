@@ -61,11 +61,14 @@
 // footer
 @import "../../blocks/main-footer/main-footer";
 
+// form-section
+@import "../../blocks/form-section/form-section.scss";
+
+// login step 1 page
+@import "../../blocks/login-step-1/login-step-1.scss";
+
 // registration page
 @import "../../blocks/registration/registration.scss";
-
-// login page
-@import "../../blocks/login/login.scss";
 
 // login admin
 @import "../../blocks/login-admin/login-admin.scss";
@@ -73,5 +76,11 @@
 // login client
 @import "../../blocks/login-client/login-client.scss";
 
-// pass recovery
-@import "../../blocks/pass-recovery/pass-recovery.scss";
+// password recovery
+@import "../../blocks/password-recovery/password-recovery.scss";
+
+// enter new password
+@import "../../blocks/enter-new-password/enter-new-password.scss";
+
+// password recovery sucsess
+@import "../../blocks/password-recovery-sucsess/password-recovery-sucsess.scss";

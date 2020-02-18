@@ -1,0 +1,29 @@
+include ../common/pug/mixins
+
+block variables
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width")
+        meta(name="keywords" content=meta1)
+        meta(name="description" content=meta2)
+        link(rel="icon" type="image/x-icon" href="./images/favicon.ico")
+    body(class=pageClass)
+      include ../blocks/main-header/main-header
+      .main-content
+        block content
+      include ../blocks/main-footer-mini/main-footer-mini
+
+      include ../blocks/modal-areas/modal-areas
+      
+      script(src="js/jquery-3.3.1.min.js")
+      script(src="js/popper.min.js")
+      script(src="js/bootstrap.min.js")
+      script(src="js/slick.min.js")
+      script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvXcFFGgHZOouXbIN4I7LPHW5MAW-oRzY")

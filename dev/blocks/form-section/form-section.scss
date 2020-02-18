@@ -1,6 +1,7 @@
-.login-section {
+.form-section {
   position: relative;
   padding-top: 27.1875rem;
+  padding-bottom: 8rem;
 
   .section-headline {
     text-align: center;
@@ -10,6 +11,7 @@
     margin-top: 2rem;
     margin-bottom: 3.125rem;
     font-size: 1.125rem;
+    line-height: 1.77;
     text-align: center;
     color: $grey;
   }
@@ -38,27 +40,18 @@
     background-color: $grey;
     opacity: .35;
   }
+
+  .forgot-link {
+    display: block;
+    margin-top: 2.125rem;
+    font-size: .9375rem;
+    text-align: center;
+    color: $blue;
+  }
 }
 
-.login-section__button-one,
-.login-section__button-two {
-  display: flex;
-  margin-top: 2.25rem;
-  margin-right: auto;
-  margin-left: auto;
-  width: 17.8125rem;
-  height: 4.5rem;
-  font-size: 1.125rem;
-}
-
-.login-section__button-two {
-  border: .25rem solid $blue;
-  background-color: $white;
-  color: $blue;
-}
-
-.login-section__decor-1,
-.login-section__decor-2 {
+.form-section__decor-1,
+.form-section__decor-2 {
   position: absolute;
   top: 12.125rem;
   left: calc(50% - 60.5rem);
@@ -70,7 +63,7 @@
   background-size: auto 100%;
 }
 
-.login-section__decor-2 {
+.form-section__decor-2 {
   top: 24.375rem;
   right: calc(50% - 59.75rem);
   left: auto;
@@ -82,7 +75,7 @@
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
 
-  .login-section {
+  .form-section {
     padding-top: 6rem;
     padding-bottom: .625rem;
 
@@ -103,6 +96,7 @@
       margin-left: auto;
       width: 15.375rem;
       font-size: .8438rem;
+      line-height: 1.62;
     }
 
     .form-control {
@@ -125,27 +119,15 @@
     }
   }
 
-  .login-section__button-one,
-  .login-section__button-two {
-    margin-top: .9375rem;
-    width: 12.5rem;
-    height: 3.125rem;
-    font-size: .8438rem;
-  }
-
-  .login-section__button-two {
-    border: .1875rem solid $blue;
-  }
-
-  .login-section__decor-1,
-  .login-section__decor-2 {
+  .form-section__decor-1,
+  .form-section__decor-2 {
     top: 0;
     left: 0;
     width: 9.1875rem;
     height: 18.4375rem;
   }
 
-  .login-section__decor-2 {
+  .form-section__decor-2 {
     top: 27.5rem;
     right: 0;
     left: auto;
