@@ -1,0 +1,69 @@
+.modal-areas {
+  background-color: rgba(0, 0, 0, .4);
+
+  .modal-dialog {
+    margin: 1.75rem auto;
+    max-width: 68.125rem;
+  }
+
+  .modal-content {
+    border-radius: 4.125rem;
+  }
+
+  .modal-body {
+    padding-top: 4.0625rem;
+    padding-bottom: 3.625rem;
+    text-align: center;
+  }
+}
+
+.modal-areas__headline {
+}
+
+.modal-areas__list-container {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 3.125rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 51.875rem;
+}
+
+.modal-areas__list-block {
+  width: 13.125rem;
+  font-size: 1.125rem;
+  text-align: left;
+  color: $grey;
+}
+
+.modal-areas__list-item {
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+}
+
+.modal-areas__button {
+  margin-top: 3.375rem;
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .modal-areas__list-container {
+    display: block;
+    margin-top: 2.125rem;
+    width: 100%;
+  }
+
+  .modal-areas__list-block {
+    width: 100%;
+    font-size: .875rem;
+    text-align: center;
+  }
+
+  .modal-areas__list-item {
+    margin-bottom: 1rem;
+  }
+
+  .modal-areas__button {
+    margin-top: 1.375rem;
+  }
+}
