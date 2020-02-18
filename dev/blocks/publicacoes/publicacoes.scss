@@ -78,6 +78,16 @@
   background-size: contain;
 }
 
+.publicacoes__menu-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 8rem;
+  background-color: $blue;
+}
+
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
 
   .publicacoes {
@@ -145,5 +155,9 @@
     height: 29.75rem;
     background-position: -5rem center;
     background-size: auto 100%;
+  }
+
+  .publicacoes__menu-background {
+    display: none;
   }
 }

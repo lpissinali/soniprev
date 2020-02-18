@@ -1,6 +1,6 @@
 .main-slider {
   position: relative;
-  margin-top: -8.625rem;
+  z-index: 20;
   height: 50.375rem;
 }
 
@@ -149,7 +149,6 @@
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
 
   .main-slider {
-    margin-top: 0;
     height: 18.375rem;
   }
 
