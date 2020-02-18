@@ -1,0 +1,46 @@
+.white-button {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  padding-right: 2.125rem;
+  padding-left: 2.125rem;
+  height: 4.1875rem;
+  border: 0;
+  border-radius: .875rem;
+  background-color: $white;
+  font-family: "latoBlack";
+  font-size: 1.5rem;
+  color: $blue;
+}
+
+.blue-button {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  height: 3.375rem;
+  border: 0;
+  border-radius: .875rem;
+  background-color: $blue;
+  font-family: "latoBlack";
+  font-size: 1rem;
+  color: $white;
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .white-button {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    height: 2.875rem;
+    font-size: .8438rem;
+  }
+
+  .blue-button {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    height: 2.875rem;
+    font-size: .8438rem;
+  }
+}

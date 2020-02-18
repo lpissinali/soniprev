@@ -9,7 +9,9 @@
 @import "layout.scss";
 
 // элементы
-@import "../../elements/white-button.scss";
+@import "../../elements/button.scss";
+
+@import "../../elements/section-headline.scss";
 
 // компоненты
 @import "../../ds-components/ds-components.scss";
@@ -22,6 +24,27 @@
 
 // главная страница - секция 1
 @import "../../blocks/main-slider/main-slider.scss";
+
+// главная страница - секция 2
+@import "../../blocks/publicacoes/publicacoes.scss";
+
+// главная страница - секция 3
+@import "../../blocks/empresa/empresa.scss";
+
+// главная страница - секция 4
+@import "../../blocks/card-section/card-section.scss";
+
+// главная страница - секция 5
+@import "../../blocks/presidencia/presidencia.scss";
+
+// главная страница - секция 6
+@import "../../blocks/servicos/servicos.scss";
+
+// главная страница - секция 7
+@import "../../blocks/areas/areas.scss";
+
+// главная страница - секция 8
+@import "../../blocks/projetos/projetos.scss";
 
 // футер
 @import "../../blocks/main-footer/main-footer";
