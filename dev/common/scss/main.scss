@@ -65,4 +65,13 @@
 @import "../../blocks/registration/registration.scss";
 
 // login page
-@import "../../blocks/login1/login1.scss";
+@import "../../blocks/login/login.scss";
+
+// login admin
+@import "../../blocks/login-admin/login-admin.scss";
+
+// login client
+@import "../../blocks/login-client/login-client.scss";
+
+// pass recovery
+@import "../../blocks/pass-recovery/pass-recovery.scss";

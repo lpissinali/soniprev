@@ -1,0 +1,155 @@
+.login-section {
+  position: relative;
+  padding-top: 27.1875rem;
+
+  .section-headline {
+    text-align: center;
+  }
+
+  .section-description {
+    margin-top: 2rem;
+    margin-bottom: 3.125rem;
+    font-size: 1.125rem;
+    text-align: center;
+    color: $grey;
+  }
+
+  form {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 29.875rem;
+  }
+
+  .form-control {
+    height: 3.6875rem;
+    border: .1875rem solid rgba(191, 191, 191, .6);
+  }
+
+  .form-submit-button {
+    display: flex;
+    margin-top: 3.875rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 16.8125rem;
+    height: 4.5rem;
+  }
+
+  .form-submit-button:disabled {
+    background-color: $grey;
+    opacity: .35;
+  }
+}
+
+.login-section__button-one,
+.login-section__button-two {
+  display: flex;
+  margin-top: 2.25rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 17.8125rem;
+  height: 4.5rem;
+  font-size: 1.125rem;
+}
+
+.login-section__button-two {
+  border: .25rem solid $blue;
+  background-color: $white;
+  color: $blue;
+}
+
+.login-section__decor-1,
+.login-section__decor-2 {
+  position: absolute;
+  top: 12.125rem;
+  left: calc(50% - 60.5rem);
+  width: 40.125rem;
+  height: 50.1875rem;
+  background-image: url("./images/login-page-bg-2.svg");
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.login-section__decor-2 {
+  top: 24.375rem;
+  right: calc(50% - 59.75rem);
+  left: auto;
+  width: 34.9375rem;
+  height: 50.625rem;
+  background-image: url("./images/login-page-bg-1.svg");
+  background-position: 0 center;
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .login-section {
+    padding-top: 6rem;
+    padding-bottom: .625rem;
+
+    .section__wrapper {
+      padding-right: 1.875rem;
+      padding-left: 1.875rem;
+      width: 100%;
+    }
+
+    .section-headline {
+      text-align: center;
+    }
+
+    .section-description {
+      margin-top: .75rem;
+      margin-right: auto;
+      margin-bottom: 2.6875rem;
+      margin-left: auto;
+      width: 15.375rem;
+      font-size: .8438rem;
+    }
+
+    .form-control {
+      height: 2.875rem;
+      border: .125rem solid rgba(191, 191, 191, .6);
+    }
+
+    .form-submit-button {
+      display: flex;
+      margin-top: 2.5rem;
+      margin-right: auto;
+      margin-left: auto;
+      width: 11.5625rem;
+      height: 3.125rem;
+    }
+
+    .form-submit-button:disabled {
+      background-color: $grey;
+      opacity: .35;
+    }
+  }
+
+  .login-section__button-one,
+  .login-section__button-two {
+    margin-top: .9375rem;
+    width: 12.5rem;
+    height: 3.125rem;
+    font-size: .8438rem;
+  }
+
+  .login-section__button-two {
+    border: .1875rem solid $blue;
+  }
+
+  .login-section__decor-1,
+  .login-section__decor-2 {
+    top: 0;
+    left: 0;
+    width: 9.1875rem;
+    height: 18.4375rem;
+  }
+
+  .login-section__decor-2 {
+    top: 27.5rem;
+    right: 0;
+    left: auto;
+    width: 6.375rem;
+    height: 13.75rem;
+  }
+}

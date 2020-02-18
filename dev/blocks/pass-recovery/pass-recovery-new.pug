@@ -1,0 +1,19 @@
+section.login-section.pass-recovery-new
+    .section__wrapper
+
+        .section-headline Recuperação de senha
+        .section-description Agora que verificou seu e-mail, digite sua nova senha e confirme-a.
+
+        form#passRecoveryForm.pass-recovery-new__form(class="needs-validation" novalidate)
+            .form-group.pass-recovery-new__form-pass
+                label(for="passRecoveryNewPass") Nova senha
+                input(type="text" class="form-control form-control-lg" id="passRecoveryNewPass" placeholder="Digite a senha" required)
+                div(class="valid-feedback") Ok
+            .form-group.pass-recovery-new__form-pass-conf
+                label(for="passRecoveryNewPassConf") Confirmação da nova senha
+                input(type="text" class="form-control form-control-lg" id="passRecoveryNewPassConf" placeholder="Confirme a senha" required)
+                div(class="valid-feedback") Ok
+            button(class="blue-button form-submit-button" type="submit") Atualizar
+
+    .login-section__decor-1
+    .login-section__decor-2

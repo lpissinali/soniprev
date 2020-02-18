@@ -1,0 +1,19 @@
+section.login-section.login-admin
+    .section__wrapper
+
+        .section-headline Gestão Interna
+        .section-description Digite o seu login e a sua senha e acesse sua conta.
+
+        form#loginAdminForm.login-admin__form(class="needs-validation" novalidate)
+            .form-group.login-admin__form-login
+                label(for="loginAdminLogin") Login
+                input(type="text" class="form-control form-control-lg" id="loginAdminLogin" placeholder="Digite o login" required)
+                div(class="valid-feedback") Ok
+            .form-group.login-admin__form-pass
+                label(for="loginAdminPass") Senha
+                input(type="password" class="form-control form-control-lg" id="loginAdminPass" placeholder="Digite sua senha" required)
+                div(class="valid-feedback") Ok
+            button(class="blue-button form-submit-button" type="submit") Acessar
+
+    .login-section__decor-1
+    .login-section__decor-2

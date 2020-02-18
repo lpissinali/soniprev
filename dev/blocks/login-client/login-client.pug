@@ -1,0 +1,19 @@
+section.login-section.login-client
+    .section__wrapper
+
+        .section-headline Área do Contratante
+        .section-description Digite o seu login e a sua senha e acesse sua conta.
+
+        form#loginAdminForm.login-client__form(class="needs-validation" novalidate)
+            .form-group.login-client__form-login
+                label(for="loginClientLogin") Login
+                input(type="text" class="form-control form-control-lg" id="loginClientLogin" placeholder="Digite o login" required)
+                div(class="valid-feedback") Ok
+            .form-group.login-admin__form-pass
+                label(for="loginClientPass") Senha
+                input(type="password" class="form-control form-control-lg" id="loginClientPass" placeholder="Digite sua senha" required)
+                div(class="valid-feedback") Ok
+            button(class="blue-button form-submit-button" type="submit") Acessar
+
+    .login-section__decor-1
+    .login-section__decor-2

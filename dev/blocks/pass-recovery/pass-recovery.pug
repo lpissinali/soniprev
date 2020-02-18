@@ -1,0 +1,15 @@
+section.login-section.pass-recovery
+    .section__wrapper
+
+        .section-headline Recuperação de senha
+        .section-description Digite seu email de recuperação para podermos enviar um código de verificação.
+
+        form#passRecoveryForm.pass-recovery__form(class="needs-validation" novalidate)
+            .form-group.pass-recovery__form-email
+                label(for="passRecoveryEmail") E-mail
+                input(type="text" class="form-control form-control-lg" id="passRecoveryEmail" placeholder="Digite seu e-mail" required)
+                div(class="valid-feedback") Ok
+            button(class="blue-button form-submit-button" type="submit") Acessar
+
+    .login-section__decor-1
+    .login-section__decor-2
