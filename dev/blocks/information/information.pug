@@ -23,6 +23,8 @@ section.information
                 .information__description Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.
 
         .information__video-container
-            img(src="./images/information-video-image.png", alt="")
-            .information__video-shadow
-            button.information__play-button
+            video#infoVideo(controls='' width='400' height='300')
+                source(src='./images/video.mp4' type='video/mp4')
+            //- img(src="./images/information-video-image.png", alt="")
+            //- .information__video-shadow
+            button#infoVideoPlayBtn.information__play-button
