@@ -15,11 +15,32 @@ header.main-header
                 li.main-header__nav-item
                     a(href="#").main-header__nav-link.mob-menu-close-btn Projetos
                 li.main-header__nav-item
-                    a(href="#").main-header__nav-link.mob-menu-close-btn Processe Seletivo
+                    .main-header__nav-link.nav-link__drop-container
+                        .nav-link___drop-move-container
+                            ul.nav-link__drop-list
+                                li.main-header__nav-item
+                                    a(href="#").main-header__nav-link.mob-menu-close-btn Setor da Saude
+                                li.main-header__nav-item
+                                    a(href="#").main-header__nav-link.mob-menu-close-btn Vagas Internas
+                        span Processe Seletivo
                 li.main-header__nav-item
                     a(href="#").main-header__nav-link.mob-menu-close-btn Fale conosco
                 li.main-header__nav-item
                     a(href="#").main-header__nav-link.main-header__nav-button.mob-menu-close-btn Login
             .main-header__navigation-close-button.mob-menu-close-btn
+        .main-header__language-selector
+            .language-selector___drop-move-container
+                ul.language-selector__drop-list
+                    li.language-selector__item
+                        a(href="#").language-selector__link Ingles
+                        img.icon(src="./images/language-selector-port-img.svg", alt="")
+                    li.language-selector__item
+                        a(href="#").language-selector__link Português
+                        img.icon(src="./images/language-selector-port-img.svg", alt="")
+            span Português
+            img.icon(src="./images/language-selector-port-img.svg", alt="")
+            img.arrow(src="./images/language-selector-poligon.svg", alt="")
+
+
         .main-header__mobile-menu-container
             .main-header__mobile-menu-button

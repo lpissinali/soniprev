@@ -51,7 +51,9 @@
 }
 
 .form-section__decor-1,
-.form-section__decor-2 {
+.form-section__decor-2,
+.form-section__decor-3,
+.form-section__decor-4 {
   position: absolute;
   top: 12.125rem;
   left: calc(50% - 60.5rem);
@@ -71,6 +73,12 @@
   height: 50.625rem;
   background-image: url("./images/login-page-bg-1.svg");
   background-position: 0 center;
+}
+
+.form-section__decor-3 {
+}
+
+.form-section__decor-4 {
 }
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {

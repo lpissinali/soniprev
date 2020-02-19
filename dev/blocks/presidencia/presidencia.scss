@@ -20,11 +20,13 @@
 }
 
 .presidencia__card {
+  position: relative;
   padding-top: 6.25rem;
   padding-right: 2.25rem;
-  padding-bottom: 3rem;
+  padding-bottom: 7.75rem;
   padding-left: 2.625rem;
   width: 27.5rem;
+  min-height: 26.875rem;
   border-radius: 2.5rem;
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, .1);
   background-color: $white;
@@ -86,10 +88,6 @@
   }
 }
 
-.presidencia__list.margin-bottom {
-  margin-bottom: 1.75rem;
-}
-
 .presidencia__list.hidden {
   max-height: 0;
   overflow: hidden;
@@ -97,9 +95,12 @@
 
 .presidencia__button,
 .presidencia__button-menos {
-  margin-top: 1.875rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
   min-width: 7.1875rem;
   cursor: pointer;
+  transform: translateX(-50%);
 }
 
 .presidencia__button-menos {
@@ -111,10 +112,6 @@
   .presidencia__list.hidden {
     margin-bottom: 0;
     max-height: none;
-  }
-
-  .presidencia__list.margin-bottom {
-    margin-bottom: 0;
   }
 
   .presidencia__button-menos {
@@ -146,9 +143,10 @@
   .presidencia__card {
     padding-top: 6.25rem;
     padding-right: 1.625rem;
-    padding-bottom: 2.75rem;
+    padding-bottom: 6rem;
     padding-left: 2rem;
     width: 100%;
+    min-height: 0;
   }
 
   .presidencia__card.margin-top {
@@ -196,7 +194,7 @@
 
   .presidencia__button,
   .presidencia__button-menos {
-    margin-top: .625rem;
+    bottom: 2.25rem;
     min-width: 6.125rem;
   }
 }
