@@ -163,4 +163,33 @@ label {
     top: 0.1875rem;
   }
 
+  .custom-file-description {
+    bottom: -3rem;
+    font-size: 0.8438rem;
+    width: 100%;
+  }
+
+  .search-group {
+    position: relative;
+  
+    .search-button {
+      top: 3rem;
+    }
+  }
+
+  .btn-primary.form__submit-button {
+    font-size: 0.8438rem;
+    padding: 1rem 4.125rem;
+    border-radius: 0.875rem;
+  }
+
+  .btn-group-toggle {
+    .btn-primary.toggle-button {
+      border-radius: 0.875rem;
+      font-size: 0.8438rem;
+      padding: 0.7rem 3.0rem;
+    }
+  }
+  
+
 }
