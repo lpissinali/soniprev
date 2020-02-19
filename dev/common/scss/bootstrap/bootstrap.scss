@@ -1,5 +1,6 @@
 @import "custom-bootstrap.scss";
 @import "~bootstrap/scss/bootstrap";
+@import "bootstrap-datepicker.scss";
 
 .form-control {
   border: 0.125rem solid rgba($medium-grey, 0.6);
@@ -22,8 +23,61 @@ label {
   background-image: none;
 }
 
+.was-validated .form-control:valid, .form-control.is-valid {
+  border-color: $light-grey;
+}
+
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus{
+  border-color: $light-grey;
+  box-shadow: none;
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus{
+  box-shadow: none;
+}
+
 .form-group > textarea {
   min-height: 10.4375rem;
+}
+
+
+.custom-file-label {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 3.0625rem;
+  padding: 0.6rem 1rem;
+  font-family: "latoRegular", arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $light-grey;
+  background-color: #ffffff;
+  border: 0.125rem solid $blue;
+  border-radius: 0.5rem;
+}
+
+.custom-file-label--value {
+  color: $grey
+}
+
+.custom-file-label.custom-file-label--value::after {
+  background-image: url(./images/uploaded.svg);
+  background-size: 70%;
+  color: $grey;
+}
+
+.custom-file-label::after {
+  right: 0.625rem;
+  background-color: $white;
+  border-left: none;
+  content: " ";
+  background-image: url(./images/attach.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
@@ -33,4 +87,15 @@ label {
   .form-group {
     margin-bottom: 1.875rem;
   }
+  .custom-file-label {
+    height: 2.625rem;
+    padding: 0.6rem 1rem;
+    line-height: 1.5;
+    border: 0.125rem solid $blue;
+    border-radius: 0.75rem;
+  }
+  .custom-file-label::after {
+    top: 0.1875rem;
+  }
+
 }
