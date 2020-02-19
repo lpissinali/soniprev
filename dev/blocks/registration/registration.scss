@@ -10,34 +10,34 @@
 }
 
 .registration-desctiption {
-  text-align: center;
   margin-bottom: 3.9375rem;
+  text-align: center;
 }
 
 .registration-avatar {
-  margin-left: auto;
+  position: relative;
+  display: block;
   margin-right: auto;
   margin-bottom: 4.4375rem;
-  display: block;
-  position: relative;
-  text-align: center;
-  height: auto;
+  margin-left: auto;
   width: 8rem;
+  height: auto;
+  text-align: center;
 }
 
 .avatar__badgeimg {
-  cursor: pointer;
   position: absolute;
+  right: -.625rem;
   bottom: 0;
-  right: -0.625rem;
   width: 2.5rem;
   height: auto;
+  cursor: pointer;
 }
 
 .fields-row {
-  display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  display: flex;
 }
 
 .registration-form.form-group {
@@ -82,8 +82,8 @@
 
 .registration-form__mobile-phone,
 .registration-form__phone {
-  width: 17.4375rem;
   margin-right: 6.5625rem;
+  width: 17.4375rem;
 }
 
 .registration-form__mother,
@@ -114,8 +114,8 @@
 }
 
 .registration-form__residence {
-  width: 17.4375rem;
   margin-bottom: 4.8125rem;
+  width: 17.4375rem;
 }
 
 .profession-section {
@@ -146,8 +146,8 @@
 .coren-section,
 .pis-section,
 .cns-section {
-  display: flex;
   flex-wrap: nowrap;
+  display: flex;
   width: 27.3125rem;
 }
 
@@ -160,17 +160,18 @@
 .registration-form__coren-file,
 .registration-form__pis-file,
 .registration-form__cns-file {
-  width: 9.0625rem;
-  margin-left: 0.875rem;
+  margin-left: .875rem;
   padding-top: 1.4375rem;
+  width: 9.0625rem;
 }
 
 .residency-caption {
-  margin-bottom: 0.9375rem;
+  margin-bottom: .9375rem;
 }
 
 .residency-section {
   margin-bottom: 2.5rem;
+
   .toggle-button {
     margin-right: 3rem;
   }
@@ -217,28 +218,29 @@
 }
 
 .agency-row {
-  margin-bottom: 8.5625rem;
   justify-content: flex-start;
+  margin-bottom: 8.5625rem;
 }
 
 .registration-form__agency,
 .registration-form__account-number,
 .registration-form__bank-approvement {
-  width: 17.375rem;
   margin-right: 9.75rem;
+  width: 17.375rem;
 }
 
 .registration-form__submit {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
+
   .registration-wrapper {
     padding-top: 11.25rem;
-    padding-left: 1.75rem;
     padding-right: 1.75rem;
+    padding-left: 1.75rem;
     width: 100%;
   }
 
@@ -256,8 +258,8 @@
   }
 
   .avatar__badgeimg {
+    right: .625rem;
     width: 1.3125rem;
-    right: 0.625rem;
   }
 
   .fields-row {
@@ -269,21 +271,24 @@
   }
 
   .personal-section {
-    margin-bottom: 4.25rem;
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 4.25rem;
   }
 
   .name-row,
   .gender-row {
     order: 1;
   }  
+
   .parents-row {
     order: 2;
   }
+
   .cpf-row {
     order: 3;
   }
+
   .phones-row {
     order: 4;
   }
@@ -312,8 +317,8 @@
   }
 
   .phones-row {
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
   }
 
   .registration-form__mobile-phone,
@@ -344,8 +349,8 @@
   }  
 
   .registration-form__residence {
-    width: 100%;
     margin-bottom: 4.8125rem;
+    width: 100%;
   }
 
   .profession-section {
@@ -361,8 +366,9 @@
   }
 
   .registration-form__diploma {
-    width: 100%;
     margin-bottom: 4.125rem;
+    width: 100%;
+
     .custom-file-description {
       bottom: -2rem;
     }
@@ -389,8 +395,8 @@
   .registration-form__coren-file,
   .registration-form__pis-file,
   .registration-form__cns-file {
+    padding-top: .95rem;
     width: 7.5rem;
-    padding-top: 0.95rem;
   }
 
   .cns-section {
@@ -398,13 +404,15 @@
   }
 
   .residency-section {
+
     .btn-group-toggle {
-      display: flex;
       justify-content: space-between;
+      display: flex;
     }
   }
 
   .registration-form__medical-residence {
+
     .custom-file-description {
       bottom: -2rem;
     }
@@ -419,6 +427,7 @@
   }
 
   .registration-form__resume {
+
     .custom-file-description {
       bottom: -2rem;
     }
@@ -448,13 +457,13 @@
 
   .registration-form__agency,
   .registration-form__account-number {
-    width: 9.0625rem;
-    margin-right: 0rem;  
+    margin-right: 0rem;
+    width: 9.0625rem;  
   }
 
   .registration-form__bank-approvement {
-    width: 100%;
     margin-right: 0rem;
+    width: 100%;
   }
   
 }

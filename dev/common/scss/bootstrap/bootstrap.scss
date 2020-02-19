@@ -1,5 +1,30 @@
 @import "custom-bootstrap.scss";
-@import "~bootstrap/scss/bootstrap";
+//@import "~bootstrap/scss/bootstrap";
+// Required
+// @import "~bootstrap/scss/_functions";
+// @import "~bootstrap/scss/_variables";
+// @import "~bootstrap/scss/_mixins";
+
+// @import "~bootstrap/scss/_forms";
+// @import "~bootstrap/scss/_custom-forms";
+// @import "~bootstrap/scss/_buttons";
+// @import "~bootstrap/scss/_transitions";
+// @import "~bootstrap/scss/_button-group";
+// @import "~bootstrap/scss/_modal";
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_reboot";
+@import "~bootstrap/scss/_forms";
+@import "~bootstrap/scss/_buttons";
+@import "~bootstrap/scss/_transitions";
+@import "~bootstrap/scss/_button-group";
+@import "~bootstrap/scss/_input-group";
+@import "~bootstrap/scss/_custom-forms";
+@import "~bootstrap/scss/_modal";
+@import "~bootstrap/scss/_utilities";
+
+
 @import "bootstrap-datepicker.scss";
 
 .form-control {
@@ -190,6 +215,4 @@ label {
       padding: 0.7rem 3.0rem;
     }
   }
-  
-
 }
