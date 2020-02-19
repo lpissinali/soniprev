@@ -2,6 +2,30 @@
 
 @import "~bootstrap/scss/bootstrap";
 
+@import "~bootstrap/scss/_functions";
+
+@import "~bootstrap/scss/_variables";
+
+@import "~bootstrap/scss/_mixins";
+
+@import "~bootstrap/scss/_reboot";
+
+@import "~bootstrap/scss/_forms";
+
+@import "~bootstrap/scss/_buttons";
+
+@import "~bootstrap/scss/_transitions";
+
+@import "~bootstrap/scss/_button-group";
+
+@import "~bootstrap/scss/_input-group";
+
+@import "~bootstrap/scss/_custom-forms";
+
+@import "~bootstrap/scss/_modal";
+
+@import "~bootstrap/scss/_utilities";
+
 @import "bootstrap-datepicker.scss";
 
 .form-control {
@@ -41,6 +65,7 @@ label {
 .was-validated .form-control:invalid:focus,
 .form-control.is-invalid:focus {
   box-shadow: none;
+  color: $red;
 }
 
 .form-group > textarea {
@@ -71,7 +96,16 @@ label {
 }
 
 .custom-file-label--value {
+  border: .125rem solid $blue;
+  border-radius: .5rem;
+  background-color: #ffffff;
+  text-align: center;
   color: $grey;
+  color: $blue;
+}
+
+.custom-file-label--value {
+  color: $blue;
 }
 
 .custom-file-label.custom-file-label--value::after {
@@ -171,8 +205,11 @@ label {
     padding: .6rem 1rem;
     height: 2.625rem;
     border: .125rem solid $blue;
+    border: .125rem solid $blue;
+    border-radius: .75rem;
     border-radius: .75rem;
     line-height: 1.5;
+    text-align: left;
   }
 
   .custom-file-label::after {

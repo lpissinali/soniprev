@@ -201,33 +201,33 @@
             != '<input type="radio" name="options" checked> Sim'
           label(class="btn btn-primary toggle-button" data-toggle="collapse" href="#specialityCollapse") 
             != '<input type="radio" name="options" checked> Não'     
-      .collapse(id="specialityCollapse")  
-        .speciality-section
-          .fields-row
-            .form-group.search-group.registration-form__speciality
-              label(for="registrationSpeciality") Especialização
-              button(class="search-button profession-search-button" type="button")
-              input(type="search" class="form-control form-control-lg" id="registrationSpeciality" placeholder="Pediatria" required)
-              div(class="invalid-feedback") validation message              
-            .form-group.registration-form__medical-residence       
-              label Comprovante de residência médica*
-              div(class="custom-file")
-                input(type="file" id="registrationMedicalResidence" class="custom-file-input")
-                label(class="form-control form-control-lg custom-file-label" for="registrationMedicalResidence") Anexar
-                div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
+        .collapse(id="specialityCollapse")  
+          .speciality-section
+            .fields-row
+              .form-group.search-group.registration-form__speciality
+                label(for="registrationSpeciality") Especialização
+                button(class="search-button profession-search-button" type="button")
+                input(type="search" class="form-control form-control-lg" id="registrationSpeciality" placeholder="Buscar (ex. Ortopedia)" required)
+                div(class="invalid-feedback") validation message              
+              .form-group.registration-form__medical-residence       
+                label Comprovante de residência médica*
+                div(class="custom-file")
+                  input(type="file" id="registrationMedicalResidence" class="custom-file-input")
+                  label(class="form-control form-control-lg custom-file-label" for="registrationMedicalResidence") Anexar
+                  div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
 
-        .experience-section
-          .fields-row
-            .form-group.registration-form__experience
-              label(for="registrationExperience") Experiências anteriores
-              textarea(type="text" class="form-control form-control-lg" id="registrationExperience" placeholder="Descreva suas experiências da área" required)
-              div(class="invalid-feedback") validation message     
-            .form-group.registration-form__resume       
-              label Curriculum
-              div(class="custom-file")
-                input(type="file" id="registrationResume" class="custom-file-input")
-                label(class="form-control form-control-lg custom-file-label" for="registrationResume") Anexar
-                div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
+      .experience-section
+        .fields-row
+          .form-group.registration-form__experience
+            label(for="registrationExperience") Experiências anteriores
+            textarea(type="text" class="form-control form-control-lg" id="registrationExperience" placeholder="Descreva suas experiências da área" required)
+            div(class="invalid-feedback") validation message     
+          .form-group.registration-form__resume       
+            label Curriculum
+            div(class="custom-file")
+              input(type="file" id="registrationResume" class="custom-file-input")
+              label(class="form-control form-control-lg custom-file-label" for="registrationResume") Anexar
+              div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
 
     .bank-section
       .fields-row.bank-row
@@ -260,4 +260,4 @@
             label(class="form-control form-control-lg custom-file-label" for="registrationBankApprovement") Anexar
             div(class="custom-file-description tipo-reg") Anexe um extrato confirmando a veracidade das informações bancárias.
 
-    button(class="btn btn-primary form__submit-button registration-form__submit" type="submit") Concluir
+    button(class="btn btn-primary form__submit-button registration-form__submit disabled" type="submit") Concluir
