@@ -1,0 +1,32 @@
+section.form-section.login-step-2
+    .section__wrapper
+
+        .section-headline Cadastro
+        .section-description Preencha com suas informações pessoais para poder enviar o cadastro
+
+        form#loginAdminForm.login-admin__form(class="needs-validation" novalidate)
+            .form-group.login-step-2__form-email
+                label(for="loginAdminLogin") E-mail
+                input(type="text" class="form-control form-control-lg" id="loginAdminLogin" placeholder="Digite o e-mail para login" required)
+                div(class="valid-feedback") Ok
+            .form-group.login-admin__form-pass
+                label(for="loginAdminPass") Senha
+                input(type="password" class="form-control form-control-lg" id="loginAdminPass" placeholder="Deve conter 8 dígitos" required)
+                div(class="valid-feedback") Ok
+            .form-group.login-admin__form-pass
+                label(for="loginAdminPass") Repetir Senha
+                input(type="password" class="form-control form-control-lg" id="loginAdminPass" placeholder="Repetir Senha" required)
+                div(class="valid-feedback") Ok
+            
+            .ds-checkbox
+                label.ds-checkbox__label(for="userAgreement") Repetir Senha 
+                    a(href="#") termos de uso.
+                    input.ds-checkbox__html-checkbox(type="checkbox" id="userAgreement")
+                    span.ds-checkbox__span
+
+            button(class="blue-button form-submit-button" type="submit") Próximo
+                
+    
+    .form-section__decor-1
+    .form-section__decor-2
+

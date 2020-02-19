@@ -1,0 +1,46 @@
+section.form-section.login-step-3
+    .section__wrapper
+
+        .section-headline Cadastro
+        .section-description Preencha com suas informações pessoais para poder enviar o cadastro
+
+        form#loginStep3Form.login-step-3__form(class="needs-validation" novalidate)
+
+            .form-section__row
+                .form-group.login-step-3__form-name.width-48
+                    label(for="loginStep3Name") Nome*
+                    input(type="text" class="form-control form-control-lg" id="loginStep3Name" placeholder="Digite seu nome" required)
+                    div(class="valid-feedback") Ok
+                .form-group.login-step-3__form-pass.width-48
+                    label(for="loginStep3Email") E-mail*
+                    input(type="password" class="form-control form-control-lg" id="loginAdminPass" placeholder="Digite seu e-mail" required)
+                    div(class="valid-feedback") Ok
+            
+            .form-section__row
+                .form-group.login-step-3__form-phone.width-27
+                    label(for="loginStep3Phone") Telefone
+                    input(type="text" class="form-control form-control-lg" id="loginStep3Email" placeholder="Digite seu telefone" required)
+                    div(class="valid-feedback") Ok
+                .form-group.login-step-3__form-status.width-67
+                    label(for="loginStep3status") Área de interesse*
+                    input(type="text" class="form-control form-control-lg" id="loginStep3status" placeholder="Digite a área (ex. Administrativa)" required)
+                    div(class="valid-feedback") Ok
+            
+            .form-section__row
+                .form-group.login-step-3__form-message.width-65
+                    label(for="loginStep3Message") Mensagem
+                    textarea(type="text" class="form-control form-control-lg" id="loginStep3Message" placeholder="Digite sua mensagem aqui" required)
+                    div(class="invalid-feedback") Digite sua mensagem aqui
+                .form-group.login-step-3__form-file.width-25   
+                    label Curriculum*
+                    div(class="custom-file")
+                        input(type="file" id="loginStep3File" class="custom-file-input")
+                        label(class="form-control form-control-lg custom-file-label" for="loginStep3File") Anexar
+                        div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
+
+            button(class="blue-button form-submit-button" type="submit") Enviar
+                
+    
+    .form-section__decor-1
+    .form-section__decor-2
+

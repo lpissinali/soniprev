@@ -22,9 +22,47 @@
     max-width: 29.875rem;
   }
 
+  .form-section__row {
+    justify-content: space-between;
+    display: flex;
+  }
+
   .form-control {
     height: 3.6875rem;
     border: .1875rem solid rgba(191, 191, 191, .6);
+    border-radius: .75rem;
+  }
+
+  .custom-file-label {
+    padding: .8rem 1rem;
+  }
+
+  .custom-file-label:after {
+    top: .425rem;
+    right: .75rem;
+    padding: 0;
+    width: 1.625rem;
+  }
+
+  .form-group.width-48 {
+    width: 48%;
+  }
+
+  .form-group.width-25 {
+    margin-right: 3.375rem;
+    width: 25%;
+  }
+
+  .form-group.width-27 {
+    width: 27%;
+  }
+
+  .form-group.width-65 {
+    width: 65%;
+  }
+
+  .form-group.width-67 {
+    width: 67%;
   }
 
   .form-submit-button {
@@ -57,6 +95,7 @@
   position: absolute;
   top: 12.125rem;
   left: calc(50% - 60.5rem);
+  z-index: -1;
   width: 40.125rem;
   height: 50.1875rem;
   background-image: url("./images/login-page-bg-2.svg");
@@ -76,9 +115,21 @@
 }
 
 .form-section__decor-3 {
+  top: 12.125rem;
+  left: calc(50% - 60.5rem);
+  width: 52.75rem;
+  height: 46.875rem;
+  background-image: url("./images/login-page-bg-3.svg");
 }
 
 .form-section__decor-4 {
+  top: 35.1875rem;
+  right: calc(50% - 59.75rem);
+  left: auto;
+  width: 34rem;
+  height: 52.125rem;
+  background-image: url("./images/login-page-bg-4.svg");
+  background-position: 0 center;
 }
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
@@ -112,6 +163,29 @@
       border: .125rem solid rgba(191, 191, 191, .6);
     }
 
+    .form-section__row {
+      display: block;
+    }
+
+    .form-control {
+    }
+
+    .custom-file-label {
+      padding: .8rem 1rem;
+    }
+
+    .custom-file-label:after {
+      top: .525rem;
+    }
+
+    .form-group.width-48,
+    .form-group.width-25,
+    .form-group.width-27,
+    .form-group.width-65,
+    .form-group.width-67 {
+      width: 100%;
+    }
+
     .form-submit-button {
       display: flex;
       margin-top: 2.5rem;
@@ -128,14 +202,17 @@
   }
 
   .form-section__decor-1,
-  .form-section__decor-2 {
+  .form-section__decor-2,
+  .form-section__decor-3,
+  .form-section__decor-4 {
     top: 0;
     left: 0;
     width: 9.1875rem;
     height: 18.4375rem;
   }
 
-  .form-section__decor-2 {
+  .form-section__decor-2,
+  .form-section__decor-4 {
     top: 27.5rem;
     right: 0;
     left: auto;

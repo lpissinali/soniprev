@@ -1,0 +1,25 @@
+.registration-sucsess {
+
+  .blue-button {
+    display: flex;
+    margin-top: 2.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 9.375rem;
+    height: 3.3125rem;
+    border: 2px solid $blue;
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .registration-sucsess {
+
+    .blue-button {
+      width: 11.5625rem;
+      height: 3.125rem;
+    }
+  }
+}

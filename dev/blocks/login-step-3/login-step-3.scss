@@ -1,0 +1,55 @@
+.login-step-3 {
+  padding-top: 15.75rem;
+  padding-bottom: 0;
+
+  form {
+    max-width: 89.25rem;
+  }
+
+  .form-section__decor-1 {
+    top: -10rem;
+    width: 33.6875rem;
+  }
+
+  .form-section__decor-2 {
+    top: 10rem;
+    width: 12.625rem;
+  }
+
+  .form-submit-button {
+    margin-top: 2.575rem;
+  }
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .login-step-3 {
+    padding-top: 6rem;
+    padding-bottom: .625rem;
+
+    .ds-checkbox {
+      margin-top: 1.75rem;
+      width: 13rem;
+    }
+
+    .form-submit-button {
+      margin-top: 5rem;
+    }
+
+    .form-section__decor-1,
+    .form-section__decor-2 {
+      top: 0;
+      left: 0;
+      width: 9.1875rem;
+      height: 18.4375rem;
+    }
+
+    .form-section__decor-2 {
+      top: 27.5rem;
+      right: 0;
+      left: auto;
+      width: 6.375rem;
+      height: 13.75rem;
+    }
+  }
+}
