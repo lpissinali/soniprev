@@ -122,8 +122,6 @@
   margin-bottom: 8.125rem;
 }
 
-
-
 .education-section {
   margin-bottom: 8.125rem;
 }
@@ -234,4 +232,229 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+  .registration-wrapper {
+    padding-top: 11.25rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    width: 100%;
+  }
+
+  .registration-title {
+    margin-bottom: 1rem;
+  }
+
+  .registration-desctiption {
+    margin-bottom: 3.625rem;
+  }
+
+  .registration-avatar {
+    margin-bottom: 7.1875rem;
+    width: 6.375rem;
+  }
+
+  .avatar__badgeimg {
+    width: 1.3125rem;
+    right: 0.625rem;
+  }
+
+  .fields-row {
+    flex-wrap: wrap;
+  }
+
+  .registration-form.form-group {
+    margin-bottom: 2.1875rem;
+  }
+
+  .personal-section {
+    margin-bottom: 4.25rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .name-row,
+  .gender-row {
+    order: 1;
+  }  
+  .parents-row {
+    order: 2;
+  }
+  .cpf-row {
+    order: 3;
+  }
+  .phones-row {
+    order: 4;
+  }
+
+  .registration-form__full-name,
+  .registration-form__date-of-birth {
+    width: 100%;
+  }
+
+  .registration-form__gender,
+  .registration-form__status,
+  .registration-form__nationality,
+  .registration-form__country,
+  .registration-form__cpf,
+  .registration-form__rg,
+  .registration-form__expeditor,
+  .registration-form__date-of-issue,
+  .registration-form__mobile-phone,
+  .registration-form__phone {
+    width: 9.0625rem;
+  }
+
+  .registration-form__mother,
+  .registration-form__father {
+    width: 100%;
+  }
+
+  .phones-row {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .registration-form__mobile-phone,
+  .registration-form__phone {
+    margin-right: 0rem;
+  }
+
+  .address-section {
+    margin-bottom: 5.25rem;
+  }
+
+  .registration-form__cep,
+  .registration-form__address {
+    width: 100%;
+  }
+
+  .registration-form__number {
+    width: 8.4375rem;
+  }  
+
+  .registration-form__complemento {
+    width: 9.875rem;
+  } 
+
+  .registration-form__district,
+  .registration-form__suburb {
+    width: 9.0625rem;
+  }  
+
+  .registration-form__residence {
+    width: 100%;
+    margin-bottom: 4.8125rem;
+  }
+
+  .profession-section {
+    margin-bottom: 2.8125rem;
+  }
+
+  .education-section {
+    margin-bottom: 4.125rem;
+  }
+
+  .diploma-row {
+    margin-bottom: 0rem;
+  }
+
+  .registration-form__diploma {
+    width: 100%;
+    margin-bottom: 4.125rem;
+    .custom-file-description {
+      bottom: -2rem;
+    }
+  }
+
+  .registration-form__date-of-graduation,
+  .registration-form__emissor {
+    width: 9.0625rem;
+  }
+
+  .coren-section,
+  .pis-section,
+  .cns-section {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .registration-form__coren,
+  .registration-form__pis,
+  .registration-form__cns {
+    width: 10.625rem;
+  }
+
+  .registration-form__coren-file,
+  .registration-form__pis-file,
+  .registration-form__cns-file {
+    width: 7.5rem;
+    padding-top: 0.95rem;
+  }
+
+  .cns-section {
+    margin-bottom: 1.25rem;
+  }
+
+  .residency-section {
+    .btn-group-toggle {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .registration-form__medical-residence {
+    .custom-file-description {
+      bottom: -2rem;
+    }
+  }  
+
+  .residency-section .toggle-button {
+    margin-right: 0rem;
+  }
+
+  .speciality-section {
+    margin-bottom: 6.25rem;
+  }
+
+  .registration-form__resume {
+    .custom-file-description {
+      bottom: -2rem;
+    }
+  }   
+
+  .experience-section {
+    margin-bottom: 4.125rem;   
+  }
+
+  .bank-section {
+    margin-bottom: 5.125rem;
+  }
+  
+  .bank-row {
+    margin-bottom: 0rem;
+  }
+
+  .registration-form__bank,
+  .registration-form__account-type {
+    width: 100%;
+  }
+
+  .agency-row {
+    justify-content: space-between;
+    margin-bottom: 0rem;
+  }
+
+  .registration-form__agency,
+  .registration-form__account-number {
+    width: 9.0625rem;
+    margin-right: 0rem;  
+  }
+
+  .registration-form__bank-approvement {
+    width: 100%;
+    margin-right: 0rem;
+  }
+  
 }
