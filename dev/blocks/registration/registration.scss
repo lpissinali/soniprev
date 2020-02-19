@@ -1,0 +1,237 @@
+.registration-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 17.8125rem;
+  width: 89.75rem;
+}
+
+.registration-title {
+  margin-bottom: 2.25rem;
+}
+
+.registration-desctiption {
+  text-align: center;
+  margin-bottom: 3.9375rem;
+}
+
+.registration-avatar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4.4375rem;
+  display: block;
+  position: relative;
+  text-align: center;
+  height: auto;
+  width: 8rem;
+}
+
+.avatar__badgeimg {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: -0.625rem;
+  width: 2.5rem;
+  height: auto;
+}
+
+.fields-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.registration-form.form-group {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 2.5rem;
+}
+
+.personal-section {
+  margin-bottom: 5.625rem;
+}
+
+.registration-form__full-name {
+  width: 59.625rem;
+}
+
+.registration-form__date-of-birth {
+  width: 19rem;
+}
+
+.gender-row {
+  margin-bottom: .5rem;
+}
+
+.registration-form__gender,
+.registration-form__status,
+.registration-form__nationality,
+.registration-form__country,
+.registration-form__cpf,
+.registration-form__rg,
+.registration-form__expeditor,
+.registration-form__date-of-issue,
+.registration-form__mobile-phone,
+.registration-form__phone {
+  width: 17.4375rem;
+}
+
+.phones-row {
+  justify-content: flex-start;
+}
+
+.registration-form__mobile-phone,
+.registration-form__phone {
+  width: 17.4375rem;
+  margin-right: 6.5625rem;
+}
+
+.registration-form__mother,
+.registration-form__father {
+  width: 41.875rem;
+}
+
+.address-section {
+  margin-bottom: 8.125rem;
+}
+
+.registration-form__cep {
+  width: 17.4375rem;
+}
+
+.registration-form__address {
+  width: 64.25rem;
+}
+
+.registration-form__number {
+  width: 19rem;
+}
+
+.registration-form__complemento,
+.registration-form__district,
+.registration-form__suburb {
+  width: 17.375rem;
+}
+
+.registration-form__residence {
+  width: 17.4375rem;
+  margin-bottom: 4.8125rem;
+}
+
+.profession-section {
+  margin-bottom: 8.125rem;
+}
+
+
+
+.education-section {
+  margin-bottom: 8.125rem;
+}
+
+.diploma-row {
+  margin-bottom: 4.8125rem;
+}
+
+.registration-form__diploma {
+  width: 21.125rem;
+}
+
+.registration-form__study-place {
+  width: 24.875rem;
+}
+
+.registration-form__date-of-graduation,
+.registration-form__emissor {
+  width: 17.375rem;
+}
+
+.coren-section,
+.pis-section,
+.cns-section {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 27.3125rem;
+}
+
+.registration-form__coren,
+.registration-form__pis,
+.registration-form__cns {
+  width: 17.375rem;
+}
+
+.registration-form__coren-file,
+.registration-form__pis-file,
+.registration-form__cns-file {
+  width: 9.0625rem;
+  margin-left: 0.875rem;
+  padding-top: 1.4375rem;
+}
+
+.residency-caption {
+  margin-bottom: 0.9375rem;
+}
+
+.residency-section {
+  margin-bottom: 2.5rem;
+  .toggle-button {
+    margin-right: 3rem;
+  }
+}
+
+.speciality-section {
+  margin-bottom: 10.4375rem;
+}
+
+.registration-form__speciality {
+  width: 59.625rem;
+}
+
+.registration-form__medical-residence {
+  width: 23rem;
+}
+
+.experience-section {
+  margin-bottom: 8.125rem;
+}
+
+.registration-form__experience {
+  width: 59.625rem;
+}
+
+.registration-form__resume {
+  width: 23rem;
+}
+
+.bank-section {
+  margin-bottom: 8.5625rem;
+}
+
+.bank-row {
+  margin-bottom: 4.6875rem;
+}
+
+.registration-form__bank {
+  width: 59.625rem;
+}
+
+.registration-form__account-type {
+  width: 25.3125rem;
+}
+
+.agency-row {
+  margin-bottom: 8.5625rem;
+  justify-content: flex-start;
+}
+
+.registration-form__agency,
+.registration-form__account-number,
+.registration-form__bank-approvement {
+  width: 17.375rem;
+  margin-right: 9.75rem;
+}
+
+.registration-form__submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

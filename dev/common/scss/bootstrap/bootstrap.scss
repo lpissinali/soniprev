@@ -1,5 +1,6 @@
 @import "custom-bootstrap.scss";
 @import "~bootstrap/scss/bootstrap";
+@import "bootstrap-datepicker.scss";
 
 .form-control {
   border: 0.125rem solid rgba($medium-grey, 0.6);
@@ -22,8 +23,126 @@ label {
   background-image: none;
 }
 
+.was-validated .form-control:valid, .form-control.is-valid {
+  border-color: $light-grey;
+}
+
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus{
+  border-color: $light-grey;
+  box-shadow: none;
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus{
+  box-shadow: none;
+}
+
 .form-group > textarea {
   min-height: 10.4375rem;
+}
+
+.was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
+  border-color: $blue;
+}
+
+.custom-file-label {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 3.0625rem;
+  padding: 0.6rem 1rem;
+  font-family: "latoRegular", arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $light-grey;
+  background-color: #ffffff;
+  border: 0.125rem solid $blue;
+  border-radius: 0.5rem;
+}
+
+.custom-file-label--value {
+  color: $grey
+}
+
+.custom-file-label.custom-file-label--value::after {
+  background-image: url(./images/uploaded.svg);
+  background-size: 62%;
+  background-position: center;
+  color: $grey;
+}
+
+.custom-file-label::after {
+  top: 0.125rem;
+  width: 2.0625rem;
+  right: 0.4375rem;
+  background-color: $white;
+  border-left: none;
+  content: " ";
+  background-image: url(./images/attach.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-file-description {
+  position: absolute;
+  bottom: -3rem;
+  font-family: $main-font-regular;
+  font-size: 1.125rem;
+  color: $grey;
+  width: 40rem;
+}
+
+.search-group {
+  position: relative;
+  input {
+    padding-left: 3.75rem;
+  }
+
+  .search-button {
+    position: absolute;
+    top: 3.625rem;
+    left: 1.4375rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: none;
+    background-color: rgba(#ffffff, 0);
+    background-image: url(./images/search.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-primary.form__submit-button {
+  font-size: 1.125rem;
+  padding: 1rem 5rem;
+  border-radius: 0.875rem;
+}
+.btn-primary.form__submit-button:disabled,
+.btn-primary.form__submit-button.disabled, {
+  color: $white;
+  background-color: $grey;
+  border-color: $grey;
+}
+
+.btn-group-toggle {
+  .btn-primary.toggle-button {
+    border-radius: 0.875rem;
+    font-size: 1.125rem;
+    padding: 0.7rem 3.0rem;
+    color: $light-grey;
+    background-color: $white;
+    border-color: $light-grey;
+  }
+  .btn-primary.toggle-button:active,
+  .btn-primary.toggle-button.active {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+  }  
 }
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
@@ -33,4 +152,15 @@ label {
   .form-group {
     margin-bottom: 1.875rem;
   }
+  .custom-file-label {
+    height: 2.625rem;
+    padding: 0.6rem 1rem;
+    line-height: 1.5;
+    border: 0.125rem solid $blue;
+    border-radius: 0.75rem;
+  }
+  .custom-file-label::after {
+    top: 0.1875rem;
+  }
+
 }

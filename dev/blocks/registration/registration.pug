@@ -1,8 +1,263 @@
-h1.registration-title Cadastro
-div.registration-desctiption Preencha com suas informações pessoais para poder enviar o cadastro
-.registration-avatar
-  picture.avatar__image
-    source(srcset="./images/avatar.png 1x, ./images/avatar@2x.png 2x" media="(min-width: 980px)")
-    source(srcset="./images/avatar.png 1x, ./images/avatar@2x.png 2x" media="(min-width: 320px)")
-    img(src="./images/avatar.png" srcset="./images/avatar.png 1x, ./images/avatar@2x.png 2x")
-  img.avatar__badgeimg(src="./images/updating.svg")
+.registration-wrapper
+  h1.registration-title.tipo-t2 Cadastro
+  div.registration-desctiption.tipo-reg Preencha com suas informações pessoais para poder enviar o cadastro
+  .registration-avatar
+    picture
+      source(srcset="./images/avatar.png 1x, ./images/avatar@2x.png 2x" media="(min-width: 980px)")
+      source(srcset="./images/avatar.png 1x, ./images/avatar@2x.png 2x" media="(min-width: 320px)")
+      img(class="avatar__image" src="./images/avatar.png" srcset="./images/avatar.png 1x, ./images/avatar@2x.png 2x")
+    img.avatar__badgeimg(src="./images/updating.svg")
+
+  form#registration.registration-form(class="needs-validation" novalidate)
+
+    .personal-section
+      .fields-row.name-row
+        .form-group.registration-form__full-name
+          label(for="registrationFullName") Nome completo
+          input(type="text" class="form-control form-control-lg" id="registrationFullName" placeholder="Millena Maria Pereira Lopes" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__date-of-birth
+          label(for="registrationDateOfBirth") Data de nascimento
+          .datepicker(id="registrationDateOfBirth")
+            input(type="text" class="form-control form-control-lg" placeholder="25/06/1995" required)
+            div(class="invalid-feedback") validation message
+
+      .fields-row.gender-row
+        .form-group.registration-form__gender
+          label Gênero
+          select(id="registrationGender" class="form-control select select--default required")
+              option(value="1") Feminino
+              option(value="2") Masculino
+          div(class="invalid-feedback") validation message        
+        .form-group.registration-form__status
+          label Estado Civil
+          select(id="registrationStatus" class="form-control select select--default required")
+              option(value="1") Solteira
+              option(value="2") Сasada
+          div(class="invalid-feedback") validation message 
+        .form-group.registration-form__nationality
+          label Nacionalidade
+          select(id="registrationNationality" class="form-control select select--default required")
+              option(value="1") Brasileira
+              option(value="2") Brasileira1
+          div(class="invalid-feedback") validation message 
+        .form-group.registration-form__country
+          label Naturalidade
+          select(id="registrationCountry" class="form-control select select--default required")
+              option(value="1") Brasil
+              option(value="2") Brasil1
+          div(class="invalid-feedback") validation message 
+
+      .fields-row.cpf-row
+        .form-group.registration-form__cpf
+          label(for="registrationCPF") CPF
+          input(type="text" class="form-control form-control-lg" id="registrationCPF" placeholder="124.125.458-89" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__rg
+          label(for="registrationRG") RG
+          input(type="text" class="form-control form-control-lg" id="registrationRG" placeholder="45.478.985-8" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__expeditor
+          label Órgão expedidor
+          select(id="registrationExpeditor" class="form-control select select--default required")
+              option(value="1") SP
+              option(value="2") SP1
+          div(class="invalid-feedback") validation message    
+        .form-group.registration-form__date-of-issue
+          label(for="registrationDateOfIssue") Data de emissão
+          .datepicker(id="registrationDateOfIssue")
+            input(type="text" class="form-control form-control-lg" placeholder="23/05/2001" required)
+            div(class="invalid-feedback") validation message
+
+      .fields-row.parents-row
+        .form-group.registration-form__mother
+          label(for="registrationMother") Nome da mãe
+          input(type="text" class="form-control form-control-lg" id="registrationMother" placeholder="Vanessa Pereira Lopes" required)
+          div(class="invalid-feedback") validation message  
+        .form-group.registration-form__father
+          label(for="registrationFather") Nome do pai
+          input(type="text" class="form-control form-control-lg" id="registrationFather" placeholder="Danilo José Pereira Lopes" required)
+          div(class="invalid-feedback") validation message  
+
+      .fields-row.phones-row
+        .form-group.registration-form__mobile-phone
+          label(for="registrationMobilePhone") Celular
+          input(type="text" class="form-control form-control-lg" id="registrationMobilePhone" placeholder="(011) 9 5489-6541" required)
+          div(class="invalid-feedback") validation message  
+        .form-group.registration-form__phone
+          label(for="registrationPhone") Telefone
+          input(type="text" class="form-control form-control-lg" id="registrationPhone" placeholder="(011) 5478-5489" required)
+          div(class="invalid-feedback") validation message 
+
+    .address-section
+      .fields-row.cep-row
+        .form-group.registration-form__cep
+          label(for="registrationCEP") CEP
+          input(type="text" class="form-control form-control-lg" id="registrationCEP" placeholder="32.458-984" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__address
+          label(for="registrationAddress") Endereço
+          input(type="text" class="form-control form-control-lg" id="registrationAddress" placeholder="Rua Gomes de Carvalho" required)
+          div(class="invalid-feedback") validation message
+
+      .fields-row.number-row
+        .form-group.registration-form__number
+          label(for="registrationNumber") Número
+          input(type="text" class="form-control form-control-lg" id="registrationNumber" placeholder="211" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__complemento
+          label(for="registrationComplemento") Complemento
+          input(type="text" class="form-control form-control-lg" id="registrationComplemento" placeholder="Andar 3" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__district
+          label Município
+          select(id="registrationDistrict" class="form-control select select--default required")
+              option(value="1") São Paulo
+              option(value="2") Rio
+          div(class="invalid-feedback") validation message 
+        .form-group.registration-form__suburb
+          label Bairro
+          select(id="registrationSuburb" class="form-control select select--default required")
+              option(value="1") Vila Olímpia
+              option(value="2") Vila Olímpia1
+          div(class="invalid-feedback") validation message       
+
+      .fields-row.document-row
+        .form-group.registration-form__residence       
+          label Comprovante de residência
+          div(class="custom-file")
+            input(type="file" id="registrationResidence" class="custom-file-input")
+            label(class="form-control form-control-lg custom-file-label" for="registrationResidence") Anexar
+            div(class="custom-file-description tipo-reg") O documento deve ser dos últimos 3 meses e estar no formato de pdf/png/jpg.
+
+    .profession-section
+      .form-group.search-group.registration-form__profession
+        label(for="registrationProfession") Profissão
+        button(class="search-button" data-toggle="collapse" href="#educationCollapse" type="button")
+        input(type="search" class="form-control form-control-lg" id="registrationProfession" placeholder="Enfermeiro" required)
+        div(class="invalid-feedback") validation message
+
+    .education-section.collapse(id="educationCollapse")
+      .fields-row.diploma-row
+        .form-group.registration-form__diploma       
+          label Diploma
+          div(class="custom-file")
+            input(type="file" id="registrationDiploma" class="custom-file-input")
+            label(class="form-control form-control-lg custom-file-label" for="registrationDiploma") Anexar
+            div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
+        .form-group.registration-form__study-place
+          label(for="registrationStudyPlace") Local da graduação
+          input(type="text" class="form-control form-control-lg" id="registrationStudyPlace" placeholder="Digite o local onde cursou a graduação" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__date-of-graduation
+          label(for="registrationDateOfGraduation") Ano de formatura
+          .datepicker(id="registrationDateOfGraduation")
+            input(type="text" class="form-control form-control-lg" placeholder="dd/mm/aaaa" required)
+            div(class="invalid-feedback") validation message
+        .form-group.registration-form__emissor
+          label UF emissor
+          select(id="registrationEmissor" class="form-control select select--default required")
+              option Selecionar
+              option(value="1") UF emissor 1
+              option(value="2") UF emissor 2
+          div(class="invalid-feedback") validation message  
+
+      .fields-row.coren-row
+        .coren-section
+          .form-group.registration-form__coren
+            label(for="registrationCOREN") COREN*
+            input(type="text" class="form-control form-control-lg" id="registrationCOREN" placeholder="00000.00" required)
+            div(class="invalid-feedback") validation message          
+          .form-group.registration-form__coren-file       
+            label
+            div(class="custom-file")
+              input(type="file" id="registrationCORENFile" class="custom-file-input")
+              label(class="form-control form-control-lg custom-file-label" for="registrationCORENFile") Anexar
+        .pis-section
+          .form-group.registration-form__pis
+            label(for="registrationPIS") PIS
+            input(type="text" class="form-control form-control-lg" id="registrationPIS" placeholder="0000.0000-000" required)
+            div(class="invalid-feedback") validation message          
+          .form-group.registration-form__pis-file       
+            label
+            div(class="custom-file")
+              input(type="file" id="registrationPISFile" class="custom-file-input")
+              label(class="form-control form-control-lg custom-file-label" for="registrationPISFile") Anexar
+        .cns-section
+          .form-group.registration-form__cns
+            label(for="registrationCNS") CNS
+            input(type="text" class="form-control form-control-lg" id="registrationCNS" placeholder="0000.0000-000" required)
+            div(class="invalid-feedback") validation message          
+          .form-group.registration-form__cns-file       
+            label
+            div(class="custom-file")
+              input(type="file" id="registrationCNSFile" class="custom-file-input")
+              label(class="form-control form-control-lg custom-file-label" for="registrationCNSFile") Anexar
+
+      .residency-section
+        .tipo-t3.residency-caption Fez residência médica/pós-graduação
+        div(class="btn-group-toggle" data-toggle="buttons")
+          label(class="btn btn-primary toggle-button" data-toggle="collapse" href="#specialityCollapse")
+            != '<input type="radio" name="options" checked> Sim'
+          label(class="btn btn-primary toggle-button" data-toggle="collapse" href="#specialityCollapse") 
+            != '<input type="radio" name="options" checked> Não'     
+      .collapse(id="specialityCollapse")  
+        .speciality-section
+          .fields-row
+            .form-group.search-group.registration-form__speciality
+              label(for="registrationSpeciality") Especialização
+              button(class="search-button profession-search-button" type="button")
+              input(type="search" class="form-control form-control-lg" id="registrationSpeciality" placeholder="Pediatria" required)
+              div(class="invalid-feedback") validation message              
+            .form-group.registration-form__medical-residence       
+              label Comprovante de residência médica*
+              div(class="custom-file")
+                input(type="file" id="registrationMedicalResidence" class="custom-file-input")
+                label(class="form-control form-control-lg custom-file-label" for="registrationMedicalResidence") Anexar
+                div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
+
+        .experience-section
+          .fields-row
+            .form-group.registration-form__experience
+              label(for="registrationExperience") Experiências anteriores
+              textarea(type="text" class="form-control form-control-lg" id="registrationExperience" placeholder="Descreva suas experiências da área" required)
+              div(class="invalid-feedback") validation message     
+            .form-group.registration-form__resume       
+              label Curriculum
+              div(class="custom-file")
+                input(type="file" id="registrationResume" class="custom-file-input")
+                label(class="form-control form-control-lg custom-file-label" for="registrationResume") Anexar
+                div(class="custom-file-description tipo-reg") O documento deve estar no formato de pdf/png/jpg.
+
+    .bank-section
+      .fields-row.bank-row
+        .form-group.registration-form__bank
+          label Banco
+          select(id="registrationBank" class="form-control select select--default required")
+              option Selecionar
+              option(value="1") Bank1
+          div(class="invalid-feedback") validation message 
+        .form-group.registration-form__account-type
+          label Tipo de conta
+          select(id="registrationAccountType" class="form-control select select--default required")
+              option Selecionar
+              option(value="1") Account Type
+          div(class="invalid-feedback") validation message 
+
+      .fields-row.agency-row
+        .form-group.registration-form__agency
+          label(for="registrationAgency") Agência e digito
+          input(type="text" class="form-control form-control-lg" id="registrationAgency" placeholder="Digite a agência" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__account-number
+          label(for="registrationAccountNumber") Conta e digito
+          input(type="text" class="form-control form-control-lg" id="registrationAccountNumber" placeholder="Digite a conta" required)
+          div(class="invalid-feedback") validation message
+        .form-group.registration-form__bank-approvement       
+          label Comprovante bancário*
+          div(class="custom-file")
+            input(type="file" id="registrationBankApprovement" class="custom-file-input")
+            label(class="form-control form-control-lg custom-file-label" for="registrationBankApprovement") Anexar
+            div(class="custom-file-description tipo-reg") Anexe um extrato confirmando a veracidade das informações bancárias.
+
+    button(class="btn btn-primary form__submit-button registration-form__submit" type="submit") Concluir
