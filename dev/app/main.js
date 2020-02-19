@@ -53,22 +53,25 @@ if (document.querySelector(".main-map__map-container") !== null) {
 }
 
 /**
- * feedback form test validation
+ * forms test validation
  */
-const feedbackForm = document.querySelector('#feedback');
-feedbackForm.addEventListener('submit', function(event) {
-  if (feedbackForm.checkValidity() === false) {
-    event.preventDefault();
-    event.stopPropagation();
-  }
-  feedbackForm.classList.add('was-validated');
-}, false);
+if ($('form').length > 0) {
+  $('form').each(function () {
+    $(this)[0].addEventListener('submit', function(event) {
+      if ($(this)[0].checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      $(this)[0].classList.add('was-validated');
+    }, false);          
+  });
+}
 
 /**
  * datepickers init
  */
 if ($('.datepicker').length > 0) {
-  $(".datepicker").each(function () {
+  $('.datepicker').each(function () {
       let id = $(this).attr('id');
       $('#' + id + ' input').datepicker({
           maxViewMode: 2,
@@ -82,7 +85,7 @@ if ($('.datepicker').length > 0) {
 
 //custom selects
 if ($('select').length > 0) {
-  $("select").each(function () {
+  $('select').each(function () {
     $(this).customSelect({});
   });
 }
@@ -91,7 +94,7 @@ if ($('select').length > 0) {
  * file inputs
  */
 if ($('.custom-file-input').length > 0) {
-  $(".custom-file-input").each(function () {
+  $('.custom-file-input').each(function () {
     $(this).on('change',function(e){
       var fileName = $(this)[0].files[0].name;
       var nextSibling = e.target.nextElementSibling;

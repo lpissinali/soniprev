@@ -40,6 +40,9 @@ label {
   min-height: 10.4375rem;
 }
 
+.was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
+  border-color: $blue;
+}
 
 .custom-file-label {
   overflow: hidden;
@@ -65,12 +68,15 @@ label {
 
 .custom-file-label.custom-file-label--value::after {
   background-image: url(./images/uploaded.svg);
-  background-size: 70%;
+  background-size: 62%;
+  background-position: center;
   color: $grey;
 }
 
 .custom-file-label::after {
-  right: 0.625rem;
+  top: 0.125rem;
+  width: 2.0625rem;
+  right: 0.4375rem;
   background-color: $white;
   border-left: none;
   content: " ";
@@ -78,6 +84,65 @@ label {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.custom-file-description {
+  position: absolute;
+  bottom: -3rem;
+  font-family: $main-font-regular;
+  font-size: 1.125rem;
+  color: $grey;
+  width: 40rem;
+}
+
+.search-group {
+  position: relative;
+  input {
+    padding-left: 3.75rem;
+  }
+
+  .search-button {
+    position: absolute;
+    top: 3.625rem;
+    left: 1.4375rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: none;
+    background-color: rgba(#ffffff, 0);
+    background-image: url(./images/search.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn-primary.form__submit-button {
+  font-size: 1.125rem;
+  padding: 1rem 5rem;
+  border-radius: 0.875rem;
+}
+.btn-primary.form__submit-button:disabled,
+.btn-primary.form__submit-button.disabled, {
+  color: $white;
+  background-color: $grey;
+  border-color: $grey;
+}
+
+.btn-group-toggle {
+  .btn-primary.toggle-button {
+    border-radius: 0.875rem;
+    font-size: 1.125rem;
+    padding: 0.7rem 3.0rem;
+    color: $light-grey;
+    background-color: $white;
+    border-color: $light-grey;
+  }
+  .btn-primary.toggle-button:active,
+  .btn-primary.toggle-button.active {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+  }  
 }
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {

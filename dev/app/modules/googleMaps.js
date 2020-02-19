@@ -1,7 +1,7 @@
 
 
 export default function initMap() {
-    let coordinates = {lat: 55.768003, lng: 37.582674},
+    let coordinates = {lat: -22.999075, lng: -43.348948},
         map = new google.maps.Map(document.querySelector(".main-map__google-map"), {
             center: coordinates,
             zoom: 17
