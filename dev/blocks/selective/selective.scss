@@ -1,0 +1,60 @@
+.selective {
+  padding-top: 8.125rem;
+  height: 37.5rem;
+  background-attachment: fixed;
+  background-image: url("./images/main-slider-slide3-bg-dsk.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.selective__wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 61.875rem;
+  text-align: center;
+}
+
+.selective__headline {
+  color: $white;
+}
+
+.selective__description {
+  margin-top: 1.625rem;
+  font-size: 1.125rem;
+  line-height: 1.77;
+  color: $white;
+}
+
+.selective__button {
+  display: flex;
+  margin-top: 4.875rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 16.875rem;
+}
+
+@media screen and ($mobile1), ($mobile1), ($mobile1) {
+
+  .selective {
+    padding-top: 4.125rem;
+    height: 31rem;
+  }
+
+  .selective__wrapper {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    width: 100%;
+  }
+
+  .selective__description {
+    margin-top: 1.625rem;
+    font-size: .8438rem;
+    line-height: 1.62;
+  }
+
+  .selective__button {
+    margin-top: 2.875rem;
+    max-width: 11.25rem;
+  }
+}

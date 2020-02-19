@@ -27,6 +27,11 @@ module.exports = [
     flatten: true,
   },
   {
+    from: 'dev/**/*.mp4',
+    to: 'images/',
+    flatten: true,
+  },
+  {
     from: 'dev/**/*.pdf',
     to: 'documents',
     flatten: true,
