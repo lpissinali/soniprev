@@ -135,33 +135,20 @@
   margin-right: .5rem;
   padding-right: 1rem;
   padding-left: 2.25rem;
-  width: 9rem;
+  width: 13rem;
   height: 3.0625rem;
 
   span {
     position: relative;
-    display: block;
     font-size: 1.25rem;
     color: $white;
     cursor: pointer;
+    margin-right: 1rem;
   }
+}
 
-  .icon,
-  .arrow {
-    position: absolute;
-    top: 1.067rem;
-    left: 0;
-    width: 1.4375rem;
-    height: auto;
-  }
-
-  .arrow {
-    top: 1.45rem;
-    right: 0;
-    left: auto;
-    width: .5rem;
-    height: auto;
-  }
+.country-icon {
+  margin-right: 0.5rem;
 }
 
 .main-header__language-selector:hover .language-selector___drop-move-container {

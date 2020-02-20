@@ -28,6 +28,8 @@
 
 @import "bootstrap-datepicker.scss";
 
+@import "bootstrap-select.scss";
+
 .form-control {
   border: .125rem solid rgba($medium-grey, .6);
 }
@@ -191,6 +193,57 @@ label {
     color: $white;
   }
 }
+
+.bootstrap-select > .dropdown-toggle {
+  background-color: rgba($white,0);
+  border-color: rgba($white,0);
+}
+
+.bootstrap-select > .dropdown-toggle:after {
+  color: white;
+}
+
+.bootstrap-select .dropdown-menu {
+  top: -3.58rem !important;
+  left: -0.43rem !important;
+  background-color: darken(#205e93, 5%);
+  border: 0.125rem solid rgba($white, 1);
+}
+
+.bootstrap-select .dropdown-menu.inner {
+  background-color: rgba($white, 0);
+}
+
+.bootstrap-select .dropdown-menu li a,
+.bootstrap-select .dropdown-menu li a:active,
+.bootstrap-select .dropdown-menu li a:hover {
+  background-color: rgba($white, 0);
+}
+
+.bootstrap-select .dropdown-menu li {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle, .bootstrap-select .dropdown-toggle:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.filter-option-inner-inner {
+  display: flex;
+}
+
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.dropdown-menu.inner.show .text {
+  display: flex;
+}
+
+
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
 

@@ -29,18 +29,9 @@ header.main-header
                     a(href="#").main-header__nav-link.main-header__nav-button.mob-menu-close-btn Login
             .main-header__navigation-close-button.mob-menu-close-btn
         .main-header__language-selector
-            .language-selector___drop-move-container
-                ul.language-selector__drop-list
-                    li.language-selector__item
-                        a(href="#").language-selector__link Inglês
-                        img.icon(src="./images/language-selector-port-img.svg", alt="")
-                    li.language-selector__item
-                        a(href="#").language-selector__link Português
-                        img.icon(src="./images/language-selector-port-img.svg", alt="")
-            span Português
-            img.icon(src="./images/language-selector-port-img.svg", alt="")
-            img.arrow(src="./images/language-selector-poligon.svg", alt="")
-
+            select(id="languageSelector" class="selectpicker")
+                option(data-content="<img class='country-icon' src='./images/language-selector-port-img.svg', alt=''><span> Português </span> " value="1")
+                option(data-content="<img class='country-icon' src='./images/language-selector-port-img.svg', alt=''><span> Inglês </span>" value="2")             
 
         .main-header__mobile-menu-container
             .main-header__mobile-menu-button

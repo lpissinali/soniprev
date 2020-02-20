@@ -85,10 +85,12 @@ if ($('.datepicker').length > 0) {
 
 //custom selects
 if ($('select').length > 0) {
-  $('select').each(function () {
+  $('select:not(.selectpicker)').each(function () {
     $(this).customSelect({});
   });
 }
+
+
 
 /**
  * file inputs
