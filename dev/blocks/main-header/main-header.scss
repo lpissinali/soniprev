@@ -140,15 +140,15 @@
 
   span {
     position: relative;
+    margin-right: 1rem;
     font-size: 1.25rem;
     color: $white;
     cursor: pointer;
-    margin-right: 1rem;
   }
 }
 
 .country-icon {
-  margin-right: 0.5rem;
+  margin-right: .5rem;
 }
 
 .main-header__language-selector:hover .language-selector___drop-move-container {
@@ -348,8 +348,8 @@
   .nav-link__drop-list {
     padding-top: 0;
     width: 100%;
-    background-color: $white;
     border: 0;
+    background-color: $white;
 
     li {
       padding-top: 0;
