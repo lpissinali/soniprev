@@ -1,8 +1,8 @@
 .feedback-bg {
   background-image: url(./images/feedback-bg.svg);
-  background-position: 70rem 0;
+  background-position: calc(50% + 60.5rem) 6.3125rem;
   background-repeat: no-repeat;
-  background-size: auto 62.5rem;
+  background-size: auto 59.25rem;
 }
 
 .feedback-wrapper {
@@ -25,7 +25,6 @@
 }
 
 .feedback-form,
- 
 .contact-data {
   flex-basis: 50%;
   flex-grow: 0;
@@ -107,9 +106,9 @@
 
   .feedback-bg {
     background-image: url(./images/feedback-bg.svg);
-    background-position: 5rem 47rem;
+    background-position: 7rem 48.5rem;
     background-repeat: no-repeat;
-    background-size: auto 29.5rem;
+    background-size: auto 27.9375rem;
   }
 
   .feedback-wrapper {
@@ -125,13 +124,13 @@
   .feedback-content {
     flex-wrap: wrap;
   }
-  
+
   .feedback-form,
   .contact-data {
     flex-basis: 100%;
     padding-right: 1.875rem;
     padding-left: 1.875rem;
-  } 
+  }
 
   .feedback-form {
     padding-bottom: 2.5rem;
@@ -139,11 +138,11 @@
 
   feedback-form__submit {
     min-width: 11.5625rem;
-  }  
+  }
 
   .contact-data {
     margin-right: auto;
-    margin-left: auto;   
+    margin-left: auto;
     padding-top: 2.5rem;
     max-width: 19.6875rem;
     border-top: .125rem solid $light-grey;
@@ -163,6 +162,4 @@
     font-size: 1.125rem;
     text-align: center;
   }
-  
-
 }
