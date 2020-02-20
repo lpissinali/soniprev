@@ -34,6 +34,12 @@
     border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.blue-button:disabled {
+  border-color: $grey;
+  background-color: $grey;
+  color: $white;  
+}
+
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
 
   .white-button {
