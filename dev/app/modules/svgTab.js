@@ -12,7 +12,8 @@ const SVGTab = class SVGTab{
   }
   
   init() {
-    this.state.activeTab = this.options.tabPrefix + '-1';
+    this.state.activeTab = this.options.tabPrefix + '-2';
+    this.activateMarker(this.state.activeTab);
     this.tabs = document.querySelectorAll(`.${this.options.tabPrefix}`);
     this.selectors = document.querySelectorAll(`.${this.options.selectorPrefix}`);
     this.initEventListeners();
@@ -23,13 +24,24 @@ const SVGTab = class SVGTab{
       $(element).on('click', (event) => {
         let tabId = this.getTabId($(element).attr('id'));
         if (this.isSectionExists(tabId)) {
-          $(`#${this.state.activeTab}`).addClass('d-none');
-          $(`#${tabId}`).removeClass('d-none');
-          this.activateAnimation($(element).attr('id'));
-
-          const activeSelectorId = this.getSelectorId(this.state.activeTab);
-          this.deactivateAnimation(activeSelectorId);
-          this.state.activeTab = tabId;
+          if (this.state.activeTab === tabId) {
+            if (this.state.activeBigger === true){
+              this.deactivateMarker(this.state.activeTab);
+              this.state.activeBigger = false;
+            }
+            else {
+              this.activateMarker(this.state.activeTab);
+              this.state.activeBigger = true;
+            }
+          }
+          else {
+            $(`#${this.state.activeTab}`).addClass('d-none');
+            $(`#${tabId}`).removeClass('d-none');
+            this.activateMarker(tabId);
+            this.deactivateMarker(this.state.activeTab);
+            this.state.activeTab = tabId;
+            this.state.activeBigger = true;
+          }
         }
       })
     });
@@ -47,11 +59,21 @@ const SVGTab = class SVGTab{
     return ($('#' + sectionId).length > 0) ? true : false;
   }
 
+  activateMarker(tabId) {
+    const activeSelectorId = this.getSelectorId(tabId);
+    this.activateAnimation(activeSelectorId);       
+  }
+
   activateAnimation(selectorId) {
     gsap.set('#' + selectorId, {
       transformOrigin:"50% 50%"
     });
-    gsap.to('#' + selectorId, {transformOrign:'center', scale:1.2});
+    gsap.to('#' + selectorId, {transformOrign:'center', scale:1.5});
+  }
+
+  deactivateMarker(tabId) {
+    const activeSelectorId = this.getSelectorId(tabId);
+    this.deactivateAnimation(activeSelectorId);   
   }
 
   deactivateAnimation(selectorId) {
