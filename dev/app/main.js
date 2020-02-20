@@ -131,6 +131,9 @@ if ($('#registrationProfession').length > 0) {
     let value = this.value;
     if ((value) && (value.trim() != '')) {
       $("#educationCollapse").collapse('show');
+      $('.toggle-button').each(function () {
+        $(this).removeClass('active');
+      });  
     } else {
       $("#educationCollapse").collapse('hide');
     }

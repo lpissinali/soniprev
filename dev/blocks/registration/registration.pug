@@ -197,9 +197,9 @@
       .residency-section
         .tipo-t3.residency-caption Fez residência médica/pós-graduação
         div(class="btn-group-toggle" data-toggle="buttons")
-          label(class="btn btn-primary toggle-button" data-toggle="collapse" href="#specialityCollapse")
+          label(class="btn btn-primary toggle-button" data-toggle="collapse" aria-pressed="false" href="#specialityCollapse")
             != '<input type="radio" name="options" checked> Sim'
-          label(class="btn btn-primary toggle-button" data-toggle="collapse" href="#specialityCollapse") 
+          label(class="btn btn-primary toggle-button" data-toggle="collapse" aria-pressed="false" href="#specialityCollapse") 
             != '<input type="radio" name="options" checked> Não'     
         .collapse(id="specialityCollapse")  
           .speciality-section
