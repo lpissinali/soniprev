@@ -7,13 +7,13 @@ section.form-section.login-admin
         form#loginAdminForm.login-admin__form(class="needs-validation" novalidate)
             .form-group.login-admin__form-login
                 label(for="loginAdminLogin") Login
-                input(type="text" class="form-control form-control-lg" id="loginAdminLogin" placeholder="Digite o login" required)
+                input(type="text" class="form-control form-control-lg required" id="loginAdminLogin" placeholder="Digite o login" required)
                 div(class="valid-feedback") Ok
             .form-group.login-admin__form-pass
                 label(for="loginAdminPass") Senha
-                input(type="password" class="form-control form-control-lg" id="loginAdminPass" placeholder="Digite sua senha" required)
+                input(type="password" class="form-control form-control-lg required" id="loginAdminPass" placeholder="Digite sua senha" required)
                 div(class="valid-feedback") Ok
-            button(class="blue-button form-submit-button" type="submit") Acessar
+            button(class="blue-button form-submit-button toggle-disabled" disabled type="submit") Acessar
             a(href="#").forgot-link Esqueci minha senha
 
     .form-section__decor-1

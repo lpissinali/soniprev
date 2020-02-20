@@ -7,13 +7,13 @@ section.form-section.login-client
         form#loginAdminForm.login-client__form(class="needs-validation" novalidate)
             .form-group.login-client__form-login
                 label(for="loginClientLogin") Login
-                input(type="text" class="form-control form-control-lg" id="loginClientLogin" placeholder="Digite o login" required)
+                input(type="text" class="form-control form-control-lg required" id="loginClientLogin" placeholder="Digite o login" required)
                 div(class="valid-feedback") Ok
             .form-group.login-admin__form-pass
                 label(for="loginClientPass") Senha
-                input(type="password" class="form-control form-control-lg" id="loginClientPass" placeholder="Digite sua senha" required)
+                input(type="password" class="form-control form-control-lg required" id="loginClientPass" placeholder="Digite sua senha" required)
                 div(class="valid-feedback") Ok
-            button(class="blue-button form-submit-button" type="submit") Acessar
+            button(class="blue-button form-submit-button toggle-disabled" disabled type="submit") Acessar
             a(href="#").forgot-link Esqueci minha senha
 
     .form-section__decor-1

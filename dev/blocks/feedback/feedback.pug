@@ -4,25 +4,25 @@
     form#feedback.feedback-form(class="needs-validation" novalidate)
       .form-group.feedback-form__name
         label(for="feedbackName") Nome*
-        input(type="text" class="form-control form-control-lg" id="feedbackName" placeholder="Digite seu nome" required)
+        input(type="text" class="form-control form-control-lg required" id="feedbackName" placeholder="Digite seu nome" required)
         div(class="valid-feedback") Ok
       .form-group.feedback-form__topic
         label(for="feedbackTopic") Empresa
-        input(type="text" class="form-control form-control-lg" id="feedbackTopic" placeholder="Digite a empresa onde trabalha" required)
+        input(type="text" class="form-control form-control-lg required" id="feedbackTopic" placeholder="Digite a empresa onde trabalha" required)
         div(class="invalid-feedback") validation message
       .form-group.feedback-form__email
         label(for="feedbackEmail") E-mail*
-        input(type="email" class="form-control form-control-lg" id="feedbackEmail" placeholder="Digite seu e-mail" required)
+        input(type="email" class="form-control form-control-lg required" id="feedbackEmail" placeholder="Digite seu e-mail" required)
         div(class="invalid-feedback") validation message
       .form-group.feedback-form__phone
         label(for="feedbackPhone") Telefone*
-        input(type="phone" class="form-control form-control-lg" id="feedbackPhone" placeholder="Digite seu telefone" required)
+        input(type="phone" class="form-control form-control-lg required" id="feedbackPhone" placeholder="Digite seu telefone" required)
         div(class="invalid-feedback") validation message
       .form-group.feedback-form__message
         label(for="feedbackMessage") Mensagem*
-        textarea(type="text" class="form-control form-control-lg" id="feedbackMessage" placeholder="Digite sua mensagem aqui" required)
+        textarea(type="text" class="form-control form-control-lg required" id="feedbackMessage" placeholder="Digite sua mensagem aqui" required)
         div(class="invalid-feedback") validation message
-      button(class="blue-button feedback-form__submit" type="submit") Enviar
+      button(class="blue-button feedback-form__submit toggle-disabled" disabled type="submit") Enviar
 
     .contact-data
       .contact-data__title.tipo-t3 Para entrar em contato
