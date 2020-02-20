@@ -11,13 +11,11 @@ section.projetos
                 span Projetos em andamento
         
         .projetos__map-section
-
+          #map-tab-1.map-tab
             .projetos__text-container.blue
-
                 .projetos__text-headline RIO DE JANEIRO | Em andamento
                 .projetos__text-wrapper
                     .projetos__text-line-50
-
                         .projetos__text-block
                             .projetos__text-number 01
                             .projetos__text-name Hospital Estadual Getúlio Vargas
@@ -49,27 +47,112 @@ section.projetos
                             .projetos__text-number 06
                             .projetos__text-name Hospital Estadual Getúlio Vargas
                             .projetos__text-descr Projeto realizado no ano de 2018
-                
-            //- .projetos__text-container.grey
+          #map-tab-5.map-tab.d-none
+            .projetos__text-container.grey
+                .projetos__text-headline PARÁ | Realizados
+                .projetos__text-wrapper
+                    .projetos__text-line-100
 
-            //-     .projetos__text-headline PARÁ | Realizados
-            //-     .projetos__text-wrapper
-            //-         .projetos__text-line-100
-
-            //-             .projetos__text-block
-            //-                 .projetos__text-number 01
-            //-                 .projetos__text-name Hosp. Reg. Do Marajó Município de Breves-Ilha do Marajó
-            //-                 .projetos__text-descr Projeto realizado no ano de 2018
+                        .projetos__text-block
+                            .projetos__text-number 01
+                            .projetos__text-name Hosp. Reg. Do Marajó Município de Breves-Ilha do Marajó
+                            .projetos__text-descr Projeto realizado no ano de 2018
                         
-            //-             .projetos__text-block
-            //-                 .projetos__text-number 02
-            //-                 .projetos__text-name Hosp. Reg. Do Marajó Município de Breves-Ilha do Marajó
-            //-                 .projetos__text-descr Projeto realizado no ano de 2018
+                        .projetos__text-block
+                            .projetos__text-number 02
+                            .projetos__text-name Hosp. Reg. Do Marajó Município de Breves-Ilha do Marajó
+                            .projetos__text-descr Projeto realizado no ano de 2018
                         
-            //-             .projetos__text-block
-            //-                 .projetos__text-number 03
-            //-                 .projetos__text-name Hosp. Reg. Do Marajó Município de Breves-Ilha do Marajó
-            //-                 .projetos__text-descr Projeto realizado no ano de 2018
+                        .projetos__text-block
+                            .projetos__text-number 03
+                            .projetos__text-name Hosp. Reg. Do Marajó Município de Breves-Ilha do Marajó
+                            .projetos__text-descr Projeto realizado no ano de 2018
 
-            .projetos__map-container
-                img(src="./images/projetos-map-image.png", alt="")
+          .projetos__map-container
+              svg#projMap(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewBox='0 0 623.7 627.1', style='enable-background:new 0 0 623.7 627.1;', xml:space='preserve')
+                style(type='text/css').
+                  .st0{opacity:0.205;fill:#0C4DA2;enable-background:new    ;}
+                  .st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+                  .st2{opacity:0.143;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;enable-background:new    ;}
+                  .st3{opacity:0.205;fill:none;enable-background:new    ;}
+                  .st4{fill:none;}
+                  .st5{fill:#0A9061;}
+                  .st6{fill:#0C4DA2;}
+                g(transform='translate(806.622 301)')
+                  path.st0(d='M-505.9,310.6v15h14.4l42.8-42.8V264l38.4-38.4l-15.6-15.6l34.7-34.7h25.3l17.7-17.7h34.8l41.3-41.3V88.1\
+                  l20.9-20.9V3.8l43.9-43.9h22.6v-62.3l-63.7-63.7h-83.7V-188l-14.4-14.4h-38.7l-24.4,24.4h-17.5l-23.7-23.7l41.2-41.2l-15.3-15.3\
+                  v-30.9h-24.7v11.2l-23.4,23.4h-64.7l-16.4,16.4l-25.5-25.5v-36.9H-599l-17.8,17.8h-37.8l21.1,21.1l-21.7,21.7h-38.1l-17.2-17.2\
+                  h-37.2v35.3l13.1,13.1v53.1h-33.1l-38.4,38.4v36.6l25.8,25.8h27.6v8.1h44.4l18.8-18.8h24.9v28.1l25.9,25.9h43.4v47.8h21.9\
+                  l18.1,18.1V115l40.3,40.3h16.6v55.9l-43.4,43.4l17.5,17.5l9.5-9.5l27.8,27.8L-505.9,310.6z')
+                  path.st1(d='M-805.8-99.7l50.4,12.9l57.5,29.7l-10.4,10.4h-44.4v-8.1h-27.6l-25.8-25.8L-805.8-99.7z')
+                  path.st1(d='M-698-57.1l8.4-8.4h24.9l27-21.7l27.5,15.2l54.3-1.4l3.3-25.9l-4.4-9.7l38-75l-30.7-7l-15.5-31l-17.3,1.7\
+                  l-14.8,19.3l-6.6-7.4l-6.8,5.1l-0.6,9.4l-14.5-8.7l-13.8-53.2l-15.7,15.9h-38.1l-17.2-17.2h-37.2v35.3l13.1,13.1v53.1h-33.1\
+                  l-38.4,38.4v36.6l25.8,25.8h27.6v8.1h44.4L-698-57.1z')
+                  path.st1(d='M-565.1-222l11-16.2l-25.5-25.5v-36.9H-599l-17.8,17.8h-37.8l21.1,21.1l-6,5.8l13.8,53.2l14.5,8.7l0.6-9.4\
+                  l6.8-5.1l6.6,7.4l14.8-19.3L-565.1-222z')
+                  path.st1(d='M-496.5-254.6v8.9l24.5,16.6l14.7,37.3l6.4-10l41.2-41.2l-15.3-15.3v-30.9h-24.7v11.2l-23.4,23.4L-496.5-254.6\
+                  z')
+                  path.st1(d='M-610.1-71.9l2.3,34.5l23.7,1.7l2.7,19.1l-13.8,21.6v-16.5h-43.4l-25.9-25.9v-28.1')
+                  path.st1(d='M-552.5-99.2l8.6,25l15.5,11.2l105.9,6.3l-7.5,55l-41.3,62.1l-1.2,18.7l-10-3.7l0.3-11.2l-25.7,4.9l-13.4-7.3\
+                  l-34,7.7V54.4l-18.1-18.1h-21.9V4.9l13.8-21.6l-2.7-19.1l-23.7-1.7l-2.3-35l54.3-0.9L-552.5-99.2z')
+                  path.st2(d='M-450.9-201.8l23.7,23.7h17.5l24.4-24.4h38.7l-13.4,14.7l-23.2,45.4l-15.2,13.7l7,3.9l-7.7,17.1L-423-56.4\
+                  L-528.4-63l-15.5-11.2l-13.1-34.8l38-75l-30.7-7l-15.5-31l11-16.2l16.4-16.4h41.3v8.9l24.5,16.6l14.7,37.3L-450.9-201.8z')
+                  path.st1(d='M-472.4,79.1l36.1,20.3l-0.4,11.3l-31.1,39.3l-30.6,33.4v-28.1H-515l-40.3-40.3V69.5l34-7.7l13.4,7.3l25.7-4.9\
+                  l-0.3,11.2L-472.4,79.1z')
+                  path.st1(d='M-467.8,150l46.8,6l12,28.6l7.6,0.8l-23.4,23.4l-13.9,2.2l-59.8,0.2v-27.8L-467.8,150z')
+                  path.st1(d='M-426.7,209.1l16.4,16.5l-22.7,22.7l-39-16.4l-39.9-7.2l13.5-13.5l59.8-0.2L-426.7,209.1z')
+                  path.st1(d='M-433,248.2l-15.7,15.7v18.8l-42.8,42.8h-14.4v-15l18.9-20.2l-27.8-27.8l-9.5,9.5l-17.5-17.5l29.9-29.9\
+                  l39.9,7.2L-433,248.2z')
+                  path.st1(d='M-436.7,110.7l8.3-6.5l25,10.6l23-6.6l15.3,26l17,23.5l-17.7,17.7h-25.3l-10.1,10.1l-7.6-0.8l-12.1-28.6\
+                  l-46.8-6L-436.7,110.7z')
+                  path.st1(d='M-436.3,99.4l16.7-24.4l34.2,4.3l7-30.6l14.9-27.1l8.5,9.5l35.7-16.2l47,23.4l-14.2,31.3l-22.5,7.7l3.2,30.5\
+                  l-8,16.8l-45.4,18l-6.1-8.4l-15.3-26l-23,6.6l-25-10.6l-8.3,6.5L-436.3,99.4z')
+                  path.st3(d='M-305.8,107.8l5.9,20l13.3,3l-26.9,26.9h-34.8l-10.9-15.1l45.4-18L-305.8,107.8z')
+                  path.st1(d='M-286.6,69.5l14.2,19l0.3,27.8l-14.4,14.4l-13.3-3l-5.9-20l-3.2-30.5L-286.6,69.5z')
+                  path.st1(d='M-429.9-1.6l8.1-12.4l10.5,12.4l12.4-6.2L-379.7,3l22.9-9.8l1.9,37.9l-8.5-9.5l-14.9,27.1l-7,30.6l-34.2-4.3\
+                  l-16.7,24.4l-36.1-20.3l1.2-18.7L-429.9-1.6z')
+                  path.st1(d='M-272.4,88.5l21.1-21.3V3.8l33.5-33.5l-10.6-11.3l0.2-24.6l-21-10.1l-21.6,14.6l-7-13.5l-35.5,10.3l-4.7,4\
+                  l-4.5,15.2l-29.5-2.2l-13.4,17.5l8.5,23.1l1.9,37.9l35.7-16.2l47,23.4l-14.2,31.3L-272.4,88.5z')
+                  path.st1(d='M-398.3-128.7h17.5v31.4l18.8,19.6l-9.9,9.2l20,21.1l-13.4,17.5l8.5,23.1L-379.7,3l-19.2-10.8l-12.4,6.2\
+                  L-421.9-14l-8.1,12.4l6.9-54.8l31.6-68.3L-398.3-128.7z')
+                  path.st1(d='M-346.6-202.4l14.4,14.4v21.9h45.5l-20.6,21.3l2.6,33l-41.9,20.2l-5.4,44.2l-20-21.1l9.9-9.2l-18.8-19.6v-31.4\
+                  h-17.5l15.2-13.7l23.2-45.4L-346.6-202.4z')
+                  path.st1(d='M-217.7-29.7l10.4-10.4h22.6l-43.4-25.6l-0.2,24.6L-217.7-29.7z')
+                  path.st1(d='M-184.7-40.1l-0.4-33.8l-17,7l-19.7-5.6l-6.3,6.8L-184.7-40.1z')
+                  path.st1(d='M-185.1-73.9l0.2-17.4l-24.9,8.8l-4.6-13.2l-26.7,6.7l-25.9-8l-10.8,22.3l7,13.5l21.6-14.6l21,10.1l6.3-6.8\
+                  l19.7,5.6L-185.1-73.9z')
+                  path.st1(d='M-241.1-89l5.5-23.1l21,4.8l20.3-4.8l9.7,9.7l-0.2,11.2l-24.9,8.8l-4.6-13.2L-241.1-89z')
+                  path.st1(d='M-194.4-112.1l-28.1-28.1l-13.2,28.1l21,4.8L-194.4-112.1z')
+                  path.st1(d='M-286.7-166.2l9.4,0l8.8,58.6L-267-97l25.9,8l5.5-23.1l13.2-28.1l-26-26L-286.7-166.2z')
+                  path.st1(d='M-286.7-166.2l9.4,0L-267-97l-10.8,22.3l-35.5,10.3l-4.7,4l-4.5,15.2l-29.5-2.2l5.4-44.2l41.9-20.2l-2.6-33\
+                  L-286.7-166.2z')
+                g#selector-map-tab-1.selector-map-tab(transform='translate(1246.699 689.772)')
+                  g(transform='translate(0 0)')
+                    path.st4(d='M-806.1-300.5h64.6v64.6h-64.6V-300.5z')
+                  path.st5(d='M-773.8-295.1c-10.4,0-18.8,8.4-18.8,18.8v0c0,14.1,18.8,35,18.8,35s18.8-20.9,18.8-35\
+                  C-755-286.7-763.4-295.1-773.8-295.1C-773.8-295.1-773.8-295.1-773.8-295.1z M-773.8-269.5c-3.7,0-6.7-3-6.7-6.7\
+                  c0-3.7,3-6.7,6.7-6.7c3.7,0,6.7,3,6.7,6.7c0,0,0,0,0,0C-767.1-272.5-770.1-269.5-773.8-269.5z')
+                g#selector-map-tab-2.selector-map-tab(transform='translate(1246.224 652)')
+                  g(transform='translate(0 0)')
+                    path.st4(d='M-787.2-265.6h64.6v64.6h-64.6V-265.6z')
+                  path.st6(d='M-754.9-260.2c-10.4,0-18.8,8.4-18.8,18.8c0,14.1,18.8,35,18.8,35s18.8-20.9,18.8-35\
+                  C-736.1-251.8-744.5-260.2-754.9-260.2C-754.9-260.2-754.9-260.2-754.9-260.2z M-754.9-234.6c-3.7,0-6.7-3-6.7-6.7\
+                  c0-3.7,3-6.7,6.7-6.7s6.7,3,6.7,6.7c0,0,0,0,0,0C-748.2-237.7-751.2-234.6-754.9-234.6z')
+                g#selector-map-tab-3.selector-map-tab(transform='translate(1173.704 695.428)')
+                  g(transform='translate(0 0)')
+                    path.st4(d='M-806.1-300.5h64.6v64.6h-64.6V-300.5z')
+                  path.st5(d='M-773.8-295.1c-10.4,0-18.8,8.4-18.8,18.8v0c0,14.1,18.8,35,18.8,35s18.8-20.9,18.8-35\
+                  C-755-286.7-763.4-295.1-773.8-295.1C-773.8-295.1-773.8-295.1-773.8-295.1z M-773.8-269.5c-3.7,0-6.7-3-6.7-6.7\
+                  c0-3.7,3-6.7,6.7-6.7c3.7,0,6.7,3,6.7,6.7c0,0,0,0,0,0C-767.1-272.5-770.1-269.5-773.8-269.5z')
+                g#selector-map-tab-4.selector-map-tab(transform='translate(1158.152 396.844)')
+                  g(transform='translate(0 0)')
+                    path.st4(d='M-806.1-300.5h64.6v64.6h-64.6V-300.5z')
+                  path.st6(d='M-773.8-295.1c-10.4,0-18.8,8.4-18.8,18.8v0c0,14.1,18.8,35,18.8,35s18.8-20.9,18.8-35\
+                  C-755-286.7-763.4-295.1-773.8-295.1C-773.8-295.1-773.8-295.1-773.8-295.1z M-773.8-269.5c-3.7,0-6.7-3-6.7-6.7\
+                  c0-3.7,3-6.7,6.7-6.7c3.7,0,6.7,3,6.7,6.7c0,0,0,0,0,0C-767.1-272.5-770.1-269.5-773.8-269.5z')
+                g#selector-map-tab-5.selector-map-tab(transform='translate(1106.28 398)')
+                  g(transform='translate(0 0)')
+                    path.st4(d='M-806.1-300.5h64.8v64.8h-64.8V-300.5z')
+                  path.st5(d='M-773.7-295.1c-10.4,0-18.9,8.5-18.9,18.9c0,14.2,18.9,35.1,18.9,35.1s18.9-20.9,18.9-35.1\
+                  C-754.8-286.6-763.3-295.1-773.7-295.1z M-773.7-269.4c-3.7,0-6.8-3-6.8-6.8c0-3.7,3-6.8,6.8-6.8c3.7,0,6.8,3,6.8,6.8c0,0,0,0,0,0\
+                  C-767-272.5-770-269.4-773.7-269.4z')

@@ -2,7 +2,8 @@
 import '../common/scss/main.scss';
 
 import { dsMobileMenu } from '../ds-components/ds-components';
-import initMap from "./modules/googleMaps";
+import initMap from './modules/googleMaps';
+import SVGTab from './modules/svgTab';
 
 require('./polyfills/polyfills');
 
@@ -15,6 +16,11 @@ const mobileMenu = new dsMobileMenu({
 });
 
 mobileMenu.init();
+
+if ($('.projetos__map-container').length > 0) {
+  const mapTab = new SVGTab();
+  mapTab.init();
+}
 
 if (document.querySelector('.main-slider__wrapper')) {
   $('.main-slider__wrapper').slick({
@@ -141,6 +147,8 @@ if ($('#registrationProfession').length > 0) {
     }
   });
 }
+
+
 
 if (document.querySelector('.information__video-container')) {
   const overlay = document.getElementById('infoVideoPlayBtn');
