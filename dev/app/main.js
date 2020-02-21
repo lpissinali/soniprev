@@ -54,7 +54,7 @@ if (document.querySelector('.presidencia__card')) {
 /**
  * map init
  */
-if (document.querySelector(".main-map__map-container") !== null) {
+if (document.querySelector('.main-map__map-container') !== null) {
   initMap();
 }
 
@@ -62,14 +62,18 @@ if (document.querySelector(".main-map__map-container") !== null) {
  * forms test validation
  */
 if ($('form').length > 0) {
-  $('form').each(function () {
-    $(this)[0].addEventListener('submit', function(event) {
-      if ($(this)[0].checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      $(this)[0].classList.add('was-validated');
-    }, false);          
+  $('form').each(function() {
+    $(this)[0].addEventListener(
+      'submit',
+      function(event) {
+        if ($(this)[0].checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        $(this)[0].classList.add('was-validated');
+      },
+      false
+    );
   });
 }
 
@@ -77,78 +81,76 @@ if ($('form').length > 0) {
  * datepickers init
  */
 if ($('.datepicker').length > 0) {
-  $('.datepicker').each(function () {
-      let id = $(this).attr('id');
-      $('#' + id + ' input').datepicker({
-          maxViewMode: 2,
-          orientation: "bottom left",
-          autoclose: true,
-          format: 'dd/mm/yyyy',
-          container: '#' + id,
-      });
+  $('.datepicker').each(function() {
+    const id = $(this).attr('id');
+    $(`#${id} input`).datepicker({
+      maxViewMode: 2,
+      orientation: 'bottom left',
+      autoclose: true,
+      format: 'dd/mm/yyyy',
+      container: `#${id}`,
+    });
   });
 }
 
-//custom selects
+// custom selects
 if ($('select').length > 0) {
-  $('select:not(.selectpicker)').each(function () {
+  $('select:not(.selectpicker)').each(function() {
     $(this).customSelect({});
   });
 }
-
-
 
 /**
  * file inputs
  */
 if ($('.custom-file-input').length > 0) {
-  $('.custom-file-input').each(function () {
-    $(this).on('change',function(e){
-      var fileName = $(this)[0].files[0].name;
-      var nextSibling = e.target.nextElementSibling;
+  $('.custom-file-input').each(function() {
+    $(this).on('change', function(e) {
+      const fileName = $(this)[0].files[0].name;
+      const nextSibling = e.target.nextElementSibling;
       nextSibling.innerText = fileName;
       $(nextSibling).addClass('custom-file-label--value');
-    })
+    });
   });
 }
 
-//enable button when all fields are filled
-$(document).on('change keyup', '.required', function (e) {
+// enable button when all fields are filled
+$(document).on('change keyup', '.required', function(e) {
   let disabled = true;
-  const id = $(this).closest('form').attr('id');
-  $("#" + id + " .required").each(function () {
-      let value = this.value;
-      if ((value) && (value.trim() != '')) {
-          disabled = false
-      } else {
-          disabled = true;
-          return false
-      }
+  const id = $(this)
+    .closest('form')
+    .attr('id');
+  $(`#${id} .required`).each(function() {
+    const { value } = this;
+    if (value && value.trim() != '') {
+      disabled = false;
+    } else {
+      disabled = true;
+      return false;
+    }
   });
 
   if (disabled) {
-      $("#" + id + " .toggle-disabled").prop("disabled", true);
+    $(`#${id} .toggle-disabled`).prop('disabled', true);
   } else {
-      $("#" + id + " .toggle-disabled").prop("disabled", false);
+    $(`#${id} .toggle-disabled`).prop('disabled', false);
   }
-})
+});
 
-//profession search
+// profession search
 if ($('#registrationProfession').length > 0) {
-  $(document).on('change', '#registrationProfession', function (e) {
-    let value = this.value;
-    if ((value) && (value.trim() != '')) {
-      $("#educationCollapse").collapse('show');
-      $('.toggle-button').each(function () {
+  $(document).on('change', '#registrationProfession', function(e) {
+    const { value } = this;
+    if (value && value.trim() != '') {
+      $('#educationCollapse').collapse('show');
+      $('.toggle-button').each(function() {
         $(this).removeClass('active');
-      });  
+      });
     } else {
-      $("#educationCollapse").collapse('hide');
+      $('#educationCollapse').collapse('hide');
     }
   });
 }
-
-
 
 if (document.querySelector('.information__video-container')) {
   const overlay = document.getElementById('infoVideoPlayBtn');
