@@ -93,9 +93,9 @@ label {
   font-family: "latoRegular", arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  text-align: center;
   color: $blue;
   overflow: hidden;
-  text-align: center;
 }
 
 .custom-file-label--value {
@@ -195,8 +195,8 @@ label {
 }
 
 .bootstrap-select > .dropdown-toggle {
-  background-color: rgba($white,0);
-  border-color: rgba($white,0);
+  border-color: rgba($white, 0);
+  background-color: rgba($white, 0);
 }
 
 .bootstrap-select > .dropdown-toggle:after {
@@ -205,9 +205,9 @@ label {
 
 .bootstrap-select .dropdown-menu {
   top: -3.58rem !important;
-  left: -0.43rem !important;
+  left: -.43rem !important;
+  border: .125rem solid rgba($white, 1);
   background-color: darken(#205e93, 5%);
-  border: 0.125rem solid rgba($white, 1);
 }
 
 .bootstrap-select .dropdown-menu.inner {
@@ -221,11 +221,12 @@ label {
 }
 
 .bootstrap-select .dropdown-menu li {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
 }
 
-.bootstrap-select > select.mobile-device:focus + .dropdown-toggle, .bootstrap-select .dropdown-toggle:focus {
+.bootstrap-select > select.mobile-device:focus + .dropdown-toggle,
+.bootstrap-select .dropdown-toggle:focus {
   outline: none !important;
   box-shadow: none;
 }
@@ -234,16 +235,16 @@ label {
   display: flex;
 }
 
-.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
-  background-color: transparent;
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:not(:disabled):not(.disabled).active,
+.show > .btn-light.dropdown-toggle {
   border-color: transparent;
+  background-color: transparent;
 }
 
 .dropdown-menu.inner.show .text {
   display: flex;
 }
-
-
 
 @media screen and ($mobile1), ($mobile1), ($mobile1) {
 
@@ -296,6 +297,33 @@ label {
       padding: .7rem 3rem;
       border-radius: .875rem;
       font-size: .8438rem;
+    }
+  }
+
+  .main-header__language-selector-mobile {
+
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+      width: 9.125rem;
+      background-color: #82a4d0;
+    }
+
+    .bootstrap-select .dropdown-menu {
+      top: -3.58rem !important;
+      left: -.2rem !important;
+      border: 0;
+      background-color: #82a4d0;
+    }
+
+    .bootstrap-select > .dropdown-toggle {
+      padding-right: .75rem;
+    }
+
+    .filter-option-inner-inner span {
+      color: $white;
+    }
+
+    .dropdown-menu span {
+      color: $white;
     }
   }
 }

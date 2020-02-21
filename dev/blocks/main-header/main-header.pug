@@ -27,6 +27,13 @@ header.main-header
                     a(href="#").main-header__nav-link.mob-menu-close-btn Fale conosco
                 li.main-header__nav-item
                     a(href="#").main-header__nav-link.main-header__nav-button.mob-menu-close-btn Login
+                li.main-header__nav-item
+                    .main-header__language-selector-mobile
+                        select(id="languageSelector" class="selectpicker")
+                            option(data-content="<img class='country-icon' src='./images/language-selector-port-img.svg', alt=''><span> Português </span> " value="1")
+                            option(data-content="<img class='country-icon' src='./images/language-selector-port-img.svg', alt=''><span> Inglês </span>" value="2")      
+                            option(data-content="<img class='country-icon' src='./images/language-selector-port-img.svg', alt=''><span> Espanhol </span>" value="3")             
+
             .main-header__navigation-close-button.mob-menu-close-btn
         .main-header__language-selector
             select(id="languageSelector" class="selectpicker")

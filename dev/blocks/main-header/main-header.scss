@@ -140,11 +140,15 @@
 
   span {
     position: relative;
-    margin-right: 1rem;
+    margin-right: .5rem;
     font-size: 1.25rem;
     color: $white;
     cursor: pointer;
   }
+}
+
+.main-header__language-selector-mobile {
+  display: none;
 }
 
 .country-icon {
@@ -274,8 +278,8 @@
     align-items: center;
     display: flex;
     width: 11.125rem;
-    height: 3.0625rem;
-    font-size: 1.25rem;
+    height: 2.5rem;
+    font-size: 1.125rem;
     color: $blue;
   }
 
@@ -358,5 +362,12 @@
 
   .main-header__language-selector {
     display: none;
+  }
+
+  .main-header__language-selector-mobile {
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    width: 9.125rem;
   }
 }
